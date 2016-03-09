@@ -1,0 +1,86 @@
+/*------------------------------------*\
+	$GLOBAL VARIBLES
+\*------------------------------------*/
+$frame-border:  30px;
+$frame-color:   #fff;
+
+
+/*------------------------------------*\
+	$COLOURS
+\*------------------------------------*/
+
+/**
+ * Generic colours
+ */
+$white: rgb(255,255,255);
+$black: rgb(0,0,0);
+
+/**
+ * Grays
+ */
+$gray-darker:  lighten( $black, 13.5% ); // #222
+$gray-dark:    lighten( $black, 20% );   // #333
+$gray:         lighten( $black, 33.5% ); // #555
+$gray-light:   lighten( $black, 60% );   // #999
+$gray-lighter: lighten( $black, 93.5% ); // #eee
+
+/**
+ * Brand stuff
+ */
+$bc-blue: rgb(0,0,0);
+$bc-blue--alt: rgb(0,0,0);
+$bc-green: rgb(0,0,0);
+$bc-green--alt: rgb(0,0,0);
+
+/**
+ * Base colours
+ */
+$body-color: #eeeeee;
+$text-color: rgb(51,51,51);
+
+$link-color: rgb(0,96,165);
+$link-color-hover: lighten( $link-color, 20% );
+
+/*------------------------------------*\
+	$Typography
+\*------------------------------------*/
+
+$font-family-sans-serif:  'Helvetica Neue', Helvetica, Arial, sans-serif, 'Microsoft JhengHei', 'STHeiti' !default;
+$font-family-serif:       Georgia, 'Times New Roman', Times, serif, 'Microsoft JhengHei', 'STHeiti' !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, 'Courier New', monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          16px !default;
+$font-size-x-large:       ceil(($font-size-base * 2.25)) !default; // ~36px
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~20px
+$font-size-medium:        ceil(($font-size-base * 0.875)) !default; // ~14px
+$font-size-small:         ceil(($font-size-base * 0.75)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.25)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 1.75)) !default; // ~28px
+$font-size-h3:            ceil(($font-size-base * 1.5)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~20px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.75)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.25 !default; // 20/16
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    $font-family-sans-serif !default;
+$headings-font-weight:    bold !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+$headings-small-color:    $gray-light;
+
+/*------------------------------------*\
+	$MISC
+\*------------------------------------*/
+
+/**
+ * Standing Easing Method
+ */
+$default-easing: cubic-bezier(0.25, 0.1, 0.25, 1);
