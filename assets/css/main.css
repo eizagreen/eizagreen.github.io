@@ -141,15 +141,14 @@ button.button:disabled {
 
 .button-flat {
   box-shadow: none;
-  -webkit-transition-property: background;
-  transition-property: background;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   background: #fff;
   border: 1px solid #000;
   text-shadow: none; }
   .button-flat:hover, .button-flat:focus {
-    background: white; }
+    background: #000;
+    color: #fff; }
   .button-flat:active, .button-flat.is-active, .button-flat.active {
     -webkit-transition-duration: 0s;
     transition-duration: 0s;
@@ -161,10 +160,6 @@ button.button:disabled {
 
 .button-border {
   box-shadow: none;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
   color: #000;
   border: 1px solid #000;
   background: none;
@@ -199,7 +194,7 @@ button.button:disabled {
     box-shadow: none;
     -webkit-appearance: none; }
   .button-border:hover:after, .button-border:active:after {
-    height: 500%;
+    height: 600%;
     opacity: 1; }
 
 .button-circle {
@@ -567,13 +562,18 @@ input.button-tiny, button.button-tiny {
 html,
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
+
+html {
+  overflow-y: scroll; }
 
 body {
   background: #eeeeee;
   position: relative;
   font-size: 16px;
-  color: #000000; }
+  color: #000000;
+  -webkit-text-size-adjust: 100%; }
 
 a {
   text-decoration: none;
@@ -846,9 +846,6 @@ p {
     width: 20px;
     height: 1px; }
 
-/**
- * about
- */
 #about {
   height: 100%;
   border-top: 30px solid #fff; }
@@ -895,9 +892,6 @@ p {
     .timeline li strong {
       font-weight: bold; }
 
-/**
- * works
- */
 #works {
   height: auto;
   background: #f8f8f8; }
@@ -946,9 +940,6 @@ p {
   transform: scale(1.06);
   -webkit-backface-visibility: hidden; }
 
-/**
- * skills
- */
 #skills {
   height: 100%;
   background: #ccc;
@@ -974,26 +965,29 @@ p {
     text-align: left;
     line-height: 1.5; }
 
-/**
- * contact
- */
 #contact {
   height: 100%;
-  border-bottom: 30px solid #fff; }
+  border-bottom: 30px solid #fff;
+  display: table; }
   #contact .bg {
     background: url("../images/contact/bg.jpg") no-repeat center center fixed; }
 
 .contact-block {
-  text-align: center; }
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
   .contact-block .theme {
     font-size: 24px;
     font-style: italic; }
   .contact-block .btn-mailto {
-    font-size: 28px; }
+    font-size: 28px;
+    margin: 20px 0; }
+    .contact-block .btn-mailto:hover .icon-mail-close:before {
+      content: "\6f"; }
   .contact-block .email {
     font-weight: bold;
     position: relative;
-    padding: 20px 0; }
+    padding-bottom: 20px; }
     .contact-block .email:after {
       content: '';
       width: 60px;
@@ -1008,6 +1002,54 @@ p {
     font-size: 28px; }
     .contact-block .findme a {
       margin: 0 3px; }
+
+#dialog {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  display: none; }
+
+.popup-content {
+  width: 100%;
+  height: 2000px;
+  border: 30px solid #eeeeee; }
+
+.btn-close {
+  width: 50px;
+  height: 50px;
+  background: white;
+  line-height: 50px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  cursor: pointer; }
+  .btn-close:before, .btn-close:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -15px;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+  .btn-close:after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg); }
+  .btn-close:hover:before, .btn-close:hover:after {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
 
 @media screen and (max-height: 450px) {
   html,

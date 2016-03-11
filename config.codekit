@@ -143,12 +143,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/js\/libs\/jquery-1.10.2.min.js": {
+	"\/assets\/js\/libs\/jquery.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/libs\/jquery-1.10.2.min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/libs\/min\/jquery-1.10.2.min-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/libs\/jquery.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/libs\/min\/jquery.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -212,22 +212,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/_icons.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/_icons.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/assets\/sass\/_ie.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/sass\/_ie.scss",
-		"outputAbbreviatedPath": "\/assets\/css\/_ie.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
