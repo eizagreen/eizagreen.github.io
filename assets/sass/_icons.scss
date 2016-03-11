@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'eizafont';
+    src:    url('../fonts/eizafont.eot?i4duec');
+    src:    url('../fonts/eizafont.eot?i4duec#iefix') format('embedded-opentype'),
+        url('../fonts/eizafont.ttf?i4duec') format('truetype'),
+        url('../fonts/eizafont.woff?i4duec') format('woff'),
+        url('../fonts/eizafont.svg?i4duec#eizafont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'eizafont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-simplelife:before {
+    content: "\73";
+}
+.icon-skill-code:before {
+    content: "\63";
+}
+.icon-skill-ui:before {
+    content: "\75";
+}
+.icon-skill-web:before {
+    content: "\77";
+}
+.icon-mail-open:before {
+    content: "\6f";
+}
+.icon-mail-close:before {
+    content: "\78";
+}
+.icon-line:before {
+    content: "\6c";
+}
+.icon-twitter:before {
+    content: "\74";
+}
+.icon-facebook:before {
+    content: "\66";
+}
+.icon-o-facebook:before {
+    content: "\62";
+}
+.icon-o-instagram:before {
+    content: "\69";
+}
+.icon-o-tumblr:before {
+    content: "\6d";
+}
+
