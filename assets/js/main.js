@@ -25,7 +25,8 @@ $(function() {
     //works grid
     $('.grid').masonry({
         "columnWidth": ".grid-sizer",
-        "itemSelector": ".item"
+        "itemSelector": ".item",
+        "percentPosition": true
     });
 
     //dialog
@@ -52,8 +53,8 @@ $(function() {
         //ga('send', 'pageview', { 'page': location.href });
     });
 
-    $(window).resize(function() {
-        $(".masonry").masonry("reload");
-    });
+    // $(window).resize(function() {
+    //     $(".grid").masonry("reload");
+    // });
 
 });
