@@ -40,6 +40,7 @@ $unicorn-btn-jumbofs: inherit;
     margin: 0;
     text-decoration: none;
     text-align: center;
+    z-index: 20;
 
     &:hover, &:focus, &:active, &.is-active, &.active {
         text-decoration: none;

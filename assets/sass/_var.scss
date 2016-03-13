@@ -18,11 +18,11 @@ $black: rgb(0,0,0);
 /**
  * Grays
  */
-$gray-darker:  transparentize( $black, 0.2 ); // #222
-$gray-dark:    transparentize( $black, 0.35 );   // #333
-$gray:         transparentize( $black, 0.5 ); // #555
-$gray-light:   transparentize( $black, 0.7 );   // #aaa
-$gray-lighter: transparentize( $black, 0.85 ); // #eee
+$gray-darker:  lighten( $black, 10% ); // #222
+$gray-dark:    lighten( $black, 20% );   // #333
+$gray:         lighten( $black, 35% ); // #555
+$gray-light:   lighten( $black, 60% );   // #999
+$gray-lighter: lighten( $black, 80% ); // #eee
 
 /**
  * Brand stuff
