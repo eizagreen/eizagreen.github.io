@@ -262,6 +262,8 @@ p {
         font-weight: normal;
         text-transform: none;
         padding-top: 10px;
+        margin-top: 10px;
+        border-top: 4px solid #000;
     }
 }
 
@@ -379,6 +381,9 @@ p {
         margin: 0 auto;
         padding: 0;
         li {
+        	.popup {
+        		cursor: pointer;
+        	}
             &.item {
                 display: block;
                 float: left;
@@ -404,6 +409,7 @@ p {
                     color: $gray-light;
                     font-size: $font-size-small;
                     margin-top: 5px;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -442,7 +448,8 @@ p {
 // -------------------------
 #skills {
     height: 100%;
-    background: #ccc;
+    background: $gray-darker;
+    color: $white;
     display: table;
 }
 
@@ -469,6 +476,7 @@ p {
     p {
         text-align: left;
         line-height: $line-height-large;
+        color: $gray-lighter;
     }
 }
 
@@ -527,7 +535,7 @@ p {
 #dialog {
     width: 100%;
     height: 100%;
-    background: $frame-color;
+    background: $body-color;
     position: fixed;
     top: 0;
     left: 0;
@@ -536,26 +544,93 @@ p {
     overflow-y: scroll;
     display: none;
 }
-
-.popup-content {
-    width: 100%;
-    height: 2000px;
-    border: $frame-border solid $body-color;
+.hero-section {
+	width: 100%;
+	position: relative;
+	line-height: 0;
 }
+.popup-block {
+    width: 100%;
+    border: $frame-border solid $frame-color;
+    display: none;
 
+    .info, .info2 {
+    	width: 50%;
+    	position: absolute;
+    	line-height: 100%;
+    	top: 100px;
+    	left: 10%;
+    	z-index: 2;
+
+    	.caption {
+    		font-size: 32px;
+    		margin: 20px 0;
+    	}
+    	.tag {
+    		color: $gray-light;
+    		margin-bottom: 10px;
+    		
+    		span {
+    			display: inline-block;
+    			border-right: 1px solid $gray-lighter;
+    			padding-right: 10px;
+    			margin-right: 10px;
+    			text-transform: uppercase;
+    			font-size: $font-size-medium;
+	    			&:last-child {
+	    			border-right: none;
+	    		}
+    		}
+    	}
+    	p {
+    		line-height: $line-height-large;
+    	}
+    }
+    .info2 {
+    	top: 30px;
+    	left: inherit;
+    	right: 30px;
+    	background: $white;
+    	padding: 20px;
+    	.icon {
+    		font-size: 100px;
+    	}
+    }
+    .feature {
+    	padding-top: 250px;
+    }
+    .stage {
+    	&.col2 {
+    		width: 50%;
+    	}
+    	&.col3 {
+    		width: 33.33%;
+    	}
+    	&.col4 {
+    		width: 25%;
+    	}
+    }
+    .device {
+    	text-align: center;
+    	padding: 20px 0 80px 0;
+    	background: #ddd;
+    }
+}
 .btn-close {
     $close-size: 50px;
     width: $close-size;
     height: $close-size;
     background: $white;
     line-height: $close-size;
+    border: 1px solid $black;
     position: fixed;
     top: $close-size;
     right: $close-size;
     cursor: pointer;
+    z-index: 20;
     &:before,
     &:after {
-        $width: 30px;
+        $width: 25px;
         $height: 2px;
         transform: rotate(-45deg);
         content: '';
@@ -580,6 +655,64 @@ p {
         }
     }
 }
+.back {
+	text-align: center;
+	padding: 40px 0;
+	.btn-back {
+		line-height: 100%;
+		padding: 35px 20px 0 20px;
+		position: relative;
+		cursor: pointer;
+		img {
+			width: 100px;
+			display: block;
+		}
+		&:hover:after {
+			content:'go back';
+			position: absolute;
+			top: 50px;
+			left: 30px;
+			text-decoration: line-through;
+		}
+	}
+}
+.others {
+	position: relative;
+	display: inline-block;
+	line-height: 100%;
+	.btn-prev, .btn-next {
+		width: 50%;
+		float: left;
+		color: $white;
+		padding: 50px 40px;
+		font-size: $font-size-large;
+		cursor: pointer;
+		span {
+			display: block;
+			color: $gray-light;
+			font-size: $font-size-medium;
+			padding-bottom: 5px;
+		}
+	}
+	.btn-prev {
+		background: $gray-dark;
+		span:before {
+			content: '\65';
+			font-family: 'eizafont';
+			padding-right: 5px;
+		}
+	}
+	.btn-next {
+		background: $black;
+		text-align: right;
+		span:after {
+			content: '\72';
+			font-family: 'eizafont';
+			padding-left: 5px;
+		}
+	}
+}
+
 
 @media screen and (max-height: $break-height-small) {
     html,

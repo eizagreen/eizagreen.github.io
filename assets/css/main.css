@@ -78,9 +78,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *zoom: 1;
   *display: inline;
   border: 1px solid #e6e6e6;
-  height: 40px;
-  line-height: 38px;
-  padding: 0px 60px;
+  height: 48px;
+  line-height: 46px;
+  padding: 0px 72px;
   font-weight: 300;
   font-size: 16px;
   font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
@@ -88,7 +88,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-shadow: 0 1px 1px white;
   margin: 0;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  z-index: 20; }
   .button:hover, .button:focus, .button:active, .button.is-active, .button.active {
     text-decoration: none; }
   .button:hover, .button:focus {
@@ -106,7 +107,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     outline: none; }
 
 input.button, button.button {
-  height: 42px;
+  height: 50px;
   cursor: pointer;
   -webkit-appearance: none; }
 
@@ -438,36 +439,36 @@ button.button:disabled {
 
 .button-jumbo {
   font-size: 24px;
-  height: 64px;
-  line-height: 64px;
-  padding: 0px 51.2px; }
+  height: 76.8px;
+  line-height: 76.8px;
+  padding: 0px 61.44px; }
 
 .button-large {
   font-size: 18px;
-  height: 48px;
-  line-height: 48px;
-  padding: 0px 38.4px; }
+  height: 57.6px;
+  line-height: 57.6px;
+  padding: 0px 46.08px; }
 
 input.button-large, button.button-large {
-  height: 50px; }
+  height: 59.6px; }
 
 .button-small {
   font-size: 14px;
-  height: 32px;
-  line-height: 30px;
-  padding: 0px 25.6px; }
+  height: 38.4px;
+  line-height: 36px;
+  padding: 0px 30.72px; }
 
 input.button-small, button.button-small {
-  height: 34px; }
+  height: 40.4px; }
 
 .button-tiny {
   font-size: 12px;
-  height: 28px;
-  line-height: 28px;
-  padding: 0px 24px; }
+  height: 33.6px;
+  line-height: 33.6px;
+  padding: 0px 28.8px; }
 
 input.button-tiny, button.button-tiny {
-  height: 30px; }
+  height: 35.6px; }
 
 @font-face {
   font-family: 'eizafont';
@@ -508,6 +509,12 @@ input.button-tiny, button.button-tiny {
 
 .icon-line:before {
   content: "\6c"; }
+
+.icon-arrow-left:before {
+  content: "\65"; }
+
+.icon-arrow-right:before {
+  content: "\72"; }
 
 .icon-twitter:before {
   content: "\74"; }
@@ -627,7 +634,7 @@ h6,
   .h6 .small {
     font-weight: normal;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.3); }
+    color: #999999; }
 
 h1,
 .h1,
@@ -699,7 +706,7 @@ h6,
 
 p {
   margin: 0 0 10px;
-  color: rgba(0, 0, 0, 0.65); }
+  color: #333333; }
 
 .wrap {
   width: 100%;
@@ -808,10 +815,12 @@ p {
       cursor: pointer; }
   .nav .copyright {
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.3);
+    color: #999999;
     font-weight: normal;
     text-transform: none;
-    padding-top: 10px; }
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 4px solid #000; }
 
 .content {
   width: 100%;
@@ -853,7 +862,7 @@ p {
     background: url("../images/about/bg.jpg") no-repeat right center fixed; }
 
 .about-block .nickname {
-  color: rgba(0, 0, 0, 0.3);
+  color: #999999;
   margin-bottom: 20px;
   font-size: 18px; }
 .about-block .intro {
@@ -868,11 +877,11 @@ p {
     margin-left: 110px;
     position: relative; }
     .timeline li.first {
-      border-left: 4px solid rgba(0, 0, 0, 0.15); }
+      border-left: 4px solid #cccccc; }
     .timeline li.second {
-      border-left: 4px solid rgba(0, 0, 0, 0.3); }
+      border-left: 4px solid #999999; }
     .timeline li.third {
-      border-left: 4px solid rgba(0, 0, 0, 0.5); }
+      border-left: 4px solid #595959; }
       .timeline li.third:after {
         width: 0;
         height: 0;
@@ -886,9 +895,9 @@ p {
     .timeline li span {
       position: absolute;
       left: -110px;
-      color: rgba(0, 0, 0, 0.5); }
+      color: #595959; }
     .timeline li p {
-      color: rgba(0, 0, 0, 0.65); }
+      color: #333333; }
     .timeline li strong {
       font-weight: bold; }
 
@@ -900,6 +909,8 @@ p {
   list-style: none;
   margin: 0 auto;
   padding: 0; }
+  .works-block .grid li .popup {
+    cursor: pointer; }
   .works-block .grid li.item {
     display: block;
     float: left;
@@ -918,9 +929,10 @@ p {
     font-size: 20px; }
     .works-block .grid li figcaption small {
       display: block;
-      color: rgba(0, 0, 0, 0.3);
+      color: #999999;
       font-size: 12px;
-      margin-top: 5px; }
+      margin-top: 5px;
+      text-transform: uppercase; }
 .works-block .grid li a,
 .works-block .grid li img {
   outline: none;
@@ -942,7 +954,8 @@ p {
 
 #skills {
   height: 100%;
-  background: #ccc;
+  background: #1a1a1a;
+  color: white;
   display: table; }
 
 .skills-block {
@@ -963,7 +976,8 @@ p {
     letter-spacing: 2px; }
   .skills-block p {
     text-align: left;
-    line-height: 1.5; }
+    line-height: 1.5;
+    color: #cccccc; }
 
 #contact {
   height: 100%;
@@ -1006,7 +1020,7 @@ p {
 #dialog {
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #eeeeee;
   position: fixed;
   top: 0;
   left: 0;
@@ -1015,20 +1029,71 @@ p {
   overflow-y: scroll;
   display: none; }
 
-.popup-content {
+.hero-section {
   width: 100%;
-  height: 2000px;
-  border: 30px solid #eeeeee; }
+  position: relative;
+  line-height: 0; }
+
+.popup-block {
+  width: 100%;
+  border: 30px solid #fff;
+  display: none; }
+  .popup-block .info, .popup-block .info2 {
+    width: 50%;
+    position: absolute;
+    line-height: 100%;
+    top: 100px;
+    left: 10%;
+    z-index: 2; }
+    .popup-block .info .caption, .popup-block .info2 .caption {
+      font-size: 32px;
+      margin: 20px 0; }
+    .popup-block .info .tag, .popup-block .info2 .tag {
+      color: #999999;
+      margin-bottom: 10px; }
+      .popup-block .info .tag span, .popup-block .info2 .tag span {
+        display: inline-block;
+        border-right: 1px solid #cccccc;
+        padding-right: 10px;
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-size: 14px; }
+        .popup-block .info .tag span:last-child, .popup-block .info2 .tag span:last-child {
+          border-right: none; }
+    .popup-block .info p, .popup-block .info2 p {
+      line-height: 1.5; }
+  .popup-block .info2 {
+    top: 30px;
+    left: inherit;
+    right: 30px;
+    background: white;
+    padding: 20px; }
+    .popup-block .info2 .icon {
+      font-size: 100px; }
+  .popup-block .feature {
+    padding-top: 250px; }
+  .popup-block .stage.col2 {
+    width: 50%; }
+  .popup-block .stage.col3 {
+    width: 33.33%; }
+  .popup-block .stage.col4 {
+    width: 25%; }
+  .popup-block .device {
+    text-align: center;
+    padding: 20px 0 80px 0;
+    background: #ddd; }
 
 .btn-close {
   width: 50px;
   height: 50px;
   background: white;
   line-height: 50px;
+  border: 1px solid black;
   position: fixed;
   top: 50px;
   right: 50px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 20; }
   .btn-close:before, .btn-close:after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -1037,10 +1102,10 @@ p {
     top: 50%;
     left: 50%;
     margin-top: -1px;
-    margin-left: -15px;
+    margin-left: -12.5px;
     display: block;
     height: 2px;
-    width: 30px;
+    width: 25px;
     background-color: black;
     -webkit-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out; }
@@ -1050,6 +1115,54 @@ p {
   .btn-close:hover:before, .btn-close:hover:after {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
+
+.back {
+  text-align: center;
+  padding: 40px 0; }
+  .back .btn-back {
+    line-height: 100%;
+    padding: 35px 20px 0 20px;
+    position: relative;
+    cursor: pointer; }
+    .back .btn-back img {
+      width: 100px;
+      display: block; }
+    .back .btn-back:hover:after {
+      content: 'go back';
+      position: absolute;
+      top: 50px;
+      left: 30px;
+      text-decoration: line-through; }
+
+.others {
+  position: relative;
+  display: inline-block;
+  line-height: 100%; }
+  .others .btn-prev, .others .btn-next {
+    width: 50%;
+    float: left;
+    color: white;
+    padding: 50px 40px;
+    font-size: 24px;
+    cursor: pointer; }
+    .others .btn-prev span, .others .btn-next span {
+      display: block;
+      color: #999999;
+      font-size: 14px;
+      padding-bottom: 5px; }
+  .others .btn-prev {
+    background: #333333; }
+    .others .btn-prev span:before {
+      content: '\65';
+      font-family: 'eizafont';
+      padding-right: 5px; }
+  .others .btn-next {
+    background: black;
+    text-align: right; }
+    .others .btn-next span:after {
+      content: '\72';
+      font-family: 'eizafont';
+      padding-left: 5px; }
 
 @media screen and (max-height: 450px) {
   html,

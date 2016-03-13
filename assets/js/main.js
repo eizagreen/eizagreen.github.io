@@ -31,30 +31,21 @@ $(function() {
 
     //dialog
     $('.popup').on('click', function() {
-        // var $this = $(this);
-        // var $card = $('.card');
-
-        // var title = $this.find('.article-title').html();
-        // var image = $this.find('img').attr('src');
-        // var time = $this.data('time');
-        // var user = $this.data('user');
-        // var picture = $this.data('picture');
-
-        // $card.find('.instagram-pic img').attr('src', image);
-        // $card.find('.name').html(user);
-        // $card.find('.upload-time').html(time);
-        // $card.find('.msg').html(title);
-        // $card.find('.author img').attr('src', picture);
-
+        event.preventDefault();
         $('#dialog').show();
+        $('#dialog').animate({
+            scrollTop:0
+        });
+        var project = $(this).attr("href");
+        $(project).fadeIn(500); 
+        $(".popup-block:visible").not(project).hide();
     });
-    $('.btn-close').on('click', function() {
-        $('#dialog').hide();
+    $('.btn-close, .btn-back').on('click', function() {
+        $('#dialog, .popup-block').hide();
         //ga('send', 'pageview', { 'page': location.href });
     });
 
-    // $(window).resize(function() {
-    //     $(".grid").masonry("reload");
-    // });
 
 });
+
+
