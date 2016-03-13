@@ -24,9 +24,9 @@ $(function() {
 
     //works grid
     $('.grid').masonry({
-        "columnWidth": ".grid-sizer",
-        "itemSelector": ".item",
-        "percentPosition": true
+        percentPosition: true,
+        columnWidth: '.grid-sizer',
+        itemSelector: '.item'
     });
 
     //dialog
