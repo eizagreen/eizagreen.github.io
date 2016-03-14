@@ -312,7 +312,10 @@ p {
     height: 100%;
     border-top: $frame-border solid $frame-color;
     .bg {
-        background: url("../images/about/bg.jpg") no-repeat right center fixed;
+        background: url("../images/about/bg.jpg");
+        background-position: right center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 }
 
@@ -488,7 +491,10 @@ p {
     border-bottom: $frame-border solid $frame-color;
     display: table;
     .bg {
-        background: url("../images/contact/bg.jpg") no-repeat center center fixed;
+        background-image: url("../images/contact/bg.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 }
 
@@ -566,6 +572,7 @@ p {
     	.caption {
     		font-size: 32px;
     		margin: 20px 0;
+    		line-height: $line-height-base;
     	}
     	.tag {
     		color: $gray-light;
@@ -688,6 +695,7 @@ p {
 		padding: 50px 40px;
 		font-size: $font-size-large;
 		cursor: pointer;
+		line-height: $line-height-base;
 		span {
 			display: block;
 			color: $gray-light;
@@ -724,11 +732,102 @@ p {
         display: inline-block;
         padding: 40px 0;
     }
-    .content {
-        height: auto;
-        position: relative;
-        top: 0;
-    }
+    
 }
 
-@media screen and (max-width: $break-small) {}
+@media screen and (max-width: $break-small) {
+	$frame-border:  20px;
+	.menu {
+		width: 100%;
+		height: 70px;
+		right: 0;
+		left: 0;
+		top: 0;
+		padding: 10px 40px;
+		position: absolute;
+	}
+	.logo {
+		max-width: 80px;
+	}
+    .nav {
+    	display: none;
+    }
+    .content {
+        height: auto !important;
+        padding-right: 0;
+        border-left: $frame-border solid $frame-color;
+        border-right: $frame-border solid $frame-color;
+    }
+    .block {
+    	padding: 40px 30px;
+    }
+    #about {
+    	border-top: $frame-border solid $frame-color;
+    }
+    #about .bg {
+    	opacity: 0.5;
+    	background-position: 75% top;
+    }
+    .about-block .intro {
+    	width: 100%;
+    }
+    .timeline li {
+    	margin-left: 0;
+
+    	span {
+    		position: relative;
+    		left: inherit;
+    		display: block;
+    		margin-bottom: 10px;
+    		color: $gray-light;
+    	}
+    }
+    .works-block .grid li {
+    	&.item {
+	    	width: 100%;
+	    }
+	    &.grid-sizer {
+	    	width: 100%;
+	    }
+    }
+    .skills-block .box {
+    	width: 100%;
+    	padding-right: 0;
+    	padding-bottom: 20px;
+    }
+    #contact {
+    	border-bottom: $frame-border solid $frame-color;
+    }
+    #contact .bg {
+    	opacity: 0.7;
+    	background-position: left center;
+    }
+    #{$unicorn-btn-namespace} {
+    	padding: 0px ($unicorn-btn-height * 0.75);
+    }
+    .popup-block {
+	    .info, .info2 {
+	    	width: 100%;
+	    	position: relative;
+	    	top: 0;
+	    	left: 0;
+	    	padding: 20px;
+	    }
+	    .info {
+	    	padding-top: 60px;
+	    }
+	    .feature {
+	    	padding-top: 0px;
+	    	padding-bottom: 20px;
+	    }
+	    .device {
+	    	padding-bottom: 40px;
+	    }
+    }
+    .others {
+    	.btn-prev, .btn-next {
+    		width: 100%;
+    		padding: 20px;
+    	}
+    }
+}
