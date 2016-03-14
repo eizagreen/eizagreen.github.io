@@ -1,7 +1,6 @@
 $(function() {
 
 
-
     // Add smooth scrolling to all links inside a navbar
     $("#scrollspy a").on('click', function(event) {
 
@@ -20,13 +19,6 @@ $(function() {
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
         });
-    });
-
-    //works grid
-    $('.grid').masonry({
-        percentPosition: true,
-        columnWidth: '.grid-sizer',
-        itemSelector: '.item'
     });
 
     //dialog
