@@ -26,18 +26,27 @@ $(function() {
         event.preventDefault();
         $('#dialog').show();
         $('#dialog').animate({
-            scrollTop:0
+            scrollTop: 0
         });
         var project = $(this).attr("href");
-        $(project).fadeIn(500); 
+        $(project).fadeIn(500);
         $(".popup-block:visible").not(project).hide();
     });
     $('.btn-close, .btn-back').on('click', function() {
         $('#dialog, .popup-block').hide();
+
         //ga('send', 'pageview', { 'page': location.href });
     });
 
 
 });
 
-
+// ga button detection
+$(window).load(function() {
+    $('a').on('click', function() {
+        var meta = $(this).data('ga');
+        if (meta !== undefined) {
+            ga('send', 'click', meta);
+        }
+    });
+});

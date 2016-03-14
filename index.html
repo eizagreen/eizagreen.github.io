@@ -18,7 +18,7 @@
     <meta property="og:image" content="http://eizagreen.github.io/assets/images/fb.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=1">
-    
+
     <link rel="stylesheet" href="assets/css/main.css?v=1" />
     <script src="assets/js/libs/modernizr-2.6.2.min.js"></script>
     <!--[if IE]>
@@ -72,7 +72,7 @@
                 <ul class="grid">
                     <li class="grid-sizer"></li>
                     <li class="item">
-                        <a class="popup" href="#simplelife">
+                        <a class="popup" href="#simplelife" data-ga="simplelife">
                             <figure>
                                 <img src="assets/images/works/project02.png" width="840" height="600" alt="">
                                 <figcaption>Simple Life簡單生活節<small>web design, interactive design</small></figcaption>
@@ -80,7 +80,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a class="popup" href="#tsk">
+                        <a class="popup" href="#tsk" data-ga="tsk">
                             <figure>
                                 <img src="assets/images/works/project03.png" width="840" height="600" alt="">
                                 <figcaption>tsk valves<small>web design, Logo, Identity</small></figcaption>
@@ -88,7 +88,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a class="popup" href="#newtalent">
+                        <a class="popup" href="#newtalent" data-ga="newtalent">
                             <figure>
                                 <img src="assets/images/works/project04.png" width="840" height="600" alt="">
                                 <figcaption>2014 ELLE New Talent Awards<small>web design, html/css</small></figcaption>
@@ -96,7 +96,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a class="popup" href="#ba">
+                        <a class="popup" href="#ba" data-ga="ba">
                             <figure>
                                 <img src="assets/images/works/project05.png" width="840" height="600" alt="">
                                 <figcaption>2015 ELLE國際美妝大賞<small>web design, html/css</small></figcaption>
@@ -104,7 +104,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a class="popup" href="#pariswoman">
+                        <a class="popup" href="#pariswoman" data-ga="pariswoman">
                             <figure>
                                 <img src="assets/images/works/project06.png" width="840" height="600" alt="">
                                 <figcaption>妳是哪一種巴黎女人?<small>web design, html/css</small></figcaption>
@@ -140,7 +140,7 @@
                 <h5 class="theme">Let's work together!</h5>
                 <p>send me an email with some details about your project,
                     <br/>or just to say hi :)</p>
-                <a href="mailto:wantilai@gmail.com" class="button button-circle button-flat btn-mailto"><span class="icon-mail-close"></span></a>
+                <a href="mailto:wantilai@gmail.com" class="button button-circle button-flat btn-mailto" data-ga="mailto"><span class="icon-mail-close"></span></a>
                 <p class="email">wantilai@gmail.com</p>
                 <div class="findme">
                 	<a href="https://www.facebook.com/eiza.lai" title="facebook" target="_blank"><span class="icon-o-facebook"></span></a>
@@ -153,7 +153,7 @@
         </div>
     </div>
     <div id="dialog">
-    	<div class="btn-close"></div>
+    	<a class="btn-close" data-ga="close"></a>
     	<div class="popup-block" id="simplelife">
     		<div class="hero-section">
 	    		<div class="info">
@@ -274,7 +274,23 @@
     		</div>
     	</div>
     </div>
+	
+	<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
 
+    ga('create', 'UA-74684128-1', 'auto');
+    ga('send', 'pageview');
+    </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="assets/js/libs/masonry.pkgd.min.js"></script>
@@ -289,22 +305,7 @@
 		    });
 		});
 	</script>
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-74684128-1', 'auto');
-    ga('send', 'pageview');
-    </script>
+    
 </body>
 
 </html>
