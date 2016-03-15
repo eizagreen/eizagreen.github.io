@@ -723,18 +723,6 @@ p {
 }
 
 
-@media screen and (max-height: $break-height-small) {
-    html,
-    body {
-        height: auto;
-    }
-    .wrap {
-        display: inline-block;
-        padding: 40px 0;
-    }
-    
-}
-
 @media screen and (max-width: $break-small) {
 	$frame-border:  20px;
 	.menu {
