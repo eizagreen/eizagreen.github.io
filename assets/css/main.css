@@ -1173,14 +1173,6 @@ p {
       font-family: 'eizafont';
       padding-left: 5px; }
 
-@media screen and (max-height: 450px) {
-  html,
-  body {
-    height: auto; }
-
-  .wrap {
-    display: inline-block;
-    padding: 40px 0; } }
 @media screen and (max-width: 480px) {
   .menu {
     width: 100%;
