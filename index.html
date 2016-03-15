@@ -70,7 +70,7 @@
             <div class="block works-block">
                 <h1 class="title">works</h1>
                 <ul class="grid">
-                    <li class="grid-sizer"></li>
+                    <!-- <li class="grid-sizer"></li> -->
                     <li class="item">
                         <a class="popup" href="#ellehomepage" data-ga="ellehomepage">
                             <figure>
@@ -307,16 +307,22 @@
 	
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="assets/js/libs/masonry.pkgd.min.js"></script>
+    <!-- <script src="assets/js/libs/masonry.pkgd.min.js"></script> -->
+    <script src="assets/js/libs/isotope.pkgd.min.js"></script>
     <script src="assets/js/main.js"></script>
 	<script>
 		//works grid
-		$(function(){
-		    $('.grid').masonry({
-		        percentPosition: true,
-		        columnWidth: '.grid-sizer',
-		        itemSelector: '.item'
-		    });
+		// $(function(){
+		//     $('.grid').masonry({
+		//         percentPosition: true,
+		//         columnWidth: '.grid-sizer',
+		//         itemSelector: '.item'
+		//     });
+		// });
+		$('.grid').isotope({
+		  // options
+		  itemSelector: '.item',
+		  layoutMode: 'fitRows'
 		});
 	</script>
 	<script>
