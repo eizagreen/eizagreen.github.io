@@ -1080,11 +1080,11 @@ p {
       font-size: 100px; }
   .popup-block .feature {
     padding-top: 250px; }
-  .popup-block .stage.col2 {
+  .popup-block .mockup.col2 {
     width: 50%; }
-  .popup-block .stage.col3 {
+  .popup-block .mockup.col3 {
     width: 33.33%; }
-  .popup-block .stage.col4 {
+  .popup-block .mockup.col4 {
     width: 25%; }
   .popup-block .device {
     text-align: center;
