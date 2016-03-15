@@ -41,12 +41,4 @@ $(function() {
 
 });
 
-// ga button detection
-$(window).load(function() {
-    $('a').on('click', function() {
-        var meta = $(this).data('ga');
-        if (meta !== undefined) {
-            ga('send', 'click', meta);
-        }
-    });
-});
+
