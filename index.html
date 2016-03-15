@@ -21,6 +21,26 @@
 
     <link rel="stylesheet" href="assets/css/main.css?v=1" />
     <script src="assets/js/libs/modernizr-2.6.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/libs/masonry.pkgd.min.js"></script> -->
+    <script src="assets/js/libs/isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+	<script>
+		//works grid
+		// $(function(){
+		//     $('.grid').masonry({
+		//         percentPosition: true,
+		//         columnWidth: '.grid-sizer',
+		//         itemSelector: '.item'
+		//     });
+		// });
+		// $('.grid').isotope({
+		//   // options
+		//   itemSelector: '.item',
+		//   layoutMode: 'fitRows'
+		// });
+	</script>
     <!--[if IE]>
 	   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -69,7 +89,7 @@
         <div id="works" class="content">
             <div class="block works-block">
                 <h1 class="title">works</h1>
-                <ul class="grid">
+                <ul class="grid js-isotope" data-isotope-options='{ "itemSelector": ".item", "layoutMode": "fitRows" }'>
                     <!-- <li class="grid-sizer"></li> -->
                     <li class="item">
                         <a class="popup" href="#ellehomepage" data-ga="ellehomepage">
@@ -305,26 +325,7 @@
     	</div>
     </div>
 	
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/libs/masonry.pkgd.min.js"></script> -->
-    <script src="assets/js/libs/isotope.pkgd.min.js"></script>
-    <script src="assets/js/main.js"></script>
-	<script>
-		//works grid
-		// $(function(){
-		//     $('.grid').masonry({
-		//         percentPosition: true,
-		//         columnWidth: '.grid-sizer',
-		//         itemSelector: '.item'
-		//     });
-		// });
-		$('.grid').isotope({
-		  // options
-		  itemSelector: '.item',
-		  layoutMode: 'fitRows'
-		});
-	</script>
+    
 	<script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
