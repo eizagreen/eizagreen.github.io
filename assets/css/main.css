@@ -909,40 +909,41 @@ p {
   height: auto;
   background: #f8f8f8; }
 
-.works-block .grid {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0; }
-  .works-block .grid li .popup {
-    cursor: pointer; }
-  .works-block .grid li.item {
+.works-block .grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+.works-block .grid li.grid-sizer, .works-block .grid li.item {
+  width: 33.333%; }
+.works-block .grid li.grid-item {
+  float: left; }
+.works-block .grid li.item.w2x {
+  width: 66.66%; }
+.works-block .grid li.item.w2x figure {
+  text-align: center;
+  overflow: hidden; }
+.works-block .grid li a {
+  padding: 8px; }
+.works-block .grid li figcaption {
+  background: #fff;
+  padding: 10px;
+  font-size: 20px; }
+  .works-block .grid li figcaption small {
     display: block;
-    float: left;
-    padding: 8px;
-    width: 33.33%; }
-  .works-block .grid li.grid-sizer {
-    width: 33.33%; }
-  .works-block .grid li.item.w2x {
-    width: 66.66%; }
-  .works-block .grid li.item.w2x figure {
-    text-align: center;
-    overflow: hidden; }
-  .works-block .grid li figcaption {
-    background: #fff;
-    padding: 10px;
-    font-size: 20px; }
-    .works-block .grid li figcaption small {
-      display: block;
-      color: #999999;
-      font-size: 12px;
-      margin-top: 5px;
-      text-transform: uppercase; }
+    color: #999999;
+    font-size: 12px;
+    margin-top: 5px;
+    text-transform: uppercase; }
+.works-block .grid li.shown,
+.works-block .no-js .grid li,
+.works-block .no-cssanimations .grid li {
+  opacity: 1; }
 .works-block .grid li a,
 .works-block .grid li img {
   outline: none;
   border: none;
   display: block;
-  max-width: 100%; }
+  width: 100%; }
 .works-block .item > a > figure {
   overflow: hidden;
   padding-bottom: 20px; }

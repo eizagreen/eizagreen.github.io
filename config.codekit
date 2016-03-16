@@ -363,6 +363,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/libs\/imagesloaded.pkgd.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/libs\/imagesloaded.pkgd.js",
+		"outputAbbreviatedPath": "\/assets\/js\/libs\/min\/imagesloaded.pkgd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/libs\/isotope.pkgd.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -385,12 +396,23 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/js\/libs\/masonry.pkgd.min.js": {
+	"\/assets\/js\/libs\/masonry.pkgd.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/libs\/masonry.pkgd.min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/libs\/min\/masonry.pkgd.min-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/libs\/masonry.pkgd.js",
+		"outputAbbreviatedPath": "\/assets\/js\/libs\/min\/masonry.pkgd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/libs\/min\/masonry.pkgd.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/libs\/min\/masonry.pkgd.min-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/libs\/min\/min\/masonry.pkgd.min-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
