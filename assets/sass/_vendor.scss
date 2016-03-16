@@ -381,28 +381,28 @@ p {
 
 .works-block {
     .grid {
-        list-style: none;
-        margin: 0 auto;
-        padding: 0;
+        &:after {
+		  content: '';
+		  display: block;
+		  clear: both;
+		}
         li {
-        	.popup {
-        		cursor: pointer;
-        	}
+            &.grid-sizer,
             &.item {
-                display: block;
-                float: left;
-                padding: 8px;
-                width: 33.33%;
+                width: 33.333%;
             }
-            &.grid-sizer {
-                width: 33.33%;
-            }
+            &.grid-item {
+				float: left;
+			}
             &.item.w2x {
                 width: 66.66%;
             }
             &.item.w2x figure {
                 text-align: center;
                 overflow: hidden;
+            }
+            a {
+            	padding: 8px;
             }
             figcaption {
                 background: #fff;
@@ -418,12 +418,17 @@ p {
             }
         }
     }
+    .grid li.shown,
+	.no-js .grid li,
+	.no-cssanimations .grid li {
+		opacity: 1;
+	}
     .grid li a,
     .grid li img {
         outline: none;
         border: none;
         display: block;
-        max-width: 100%;
+        width: 100%;
     }
     .item > a > figure {
         overflow: hidden;
