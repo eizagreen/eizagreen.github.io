@@ -461,11 +461,6 @@
     sr.reveal('.contact-block');
 
     //loading
-    paceOptions = {
-        elements: false,
-        restartOnPushState: false,
-        restartOnRequestAfter: false
-    }
     Pace.on('done', function() {
         $('.loading').fadeOut(1000);
         Pace.stop();
