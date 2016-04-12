@@ -130,53 +130,52 @@ p {
 // loading
 // -------------------------
 .loading {
-	width: 100%;
-	height: 100%;
-	background: $white;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
-.pace {
-  -webkit-pointer-events: none;
-  pointer-events: none;
 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .pace.pace-inactive .pace-progress {
-  display: none;
+    display: none;
 }
 
 .pace .pace-progress {
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  right: 0;
-  height: 5rem;
-  width: 5rem;
-
-  -webkit-transform: translate3d(0, 0, 0) !important;
-  -ms-transform: translate3d(0, 0, 0) !important;
-  transform: translate3d(0, 0, 0) !important;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 0;
+    height: 5rem;
+    width: 5rem;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -ms-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
 }
 
 .pace .pace-progress:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: .5rem;
-  content: attr(data-progress-text);
-  font-family: 'Judson', serif;
-  font-style: italic;
-  font-weight: 100;
-  font-size: 10rem;
-  line-height: 1;
-  text-align: right;
-  color: rgba(0, 0, 0, 0.19999999999999996);
+    display: block;
+    position: absolute;
+    top: 0;
+    right: .5rem;
+    content: attr(data-progress-text);
+    font-family: 'Judson', serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 10rem;
+    line-height: 1;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.19999999999999996);
 }
 
 // Common
@@ -336,7 +335,7 @@ p {
 }
 
 .block {
-	min-height: 100%;
+    min-height: 100%;
     position: relative;
     padding: 40px 60px;
 }
@@ -434,18 +433,18 @@ p {
 .works-block {
     .grid {
         &:after {
-		  content: '';
-		  display: block;
-		  clear: both;
-		}
+            content: '';
+            display: block;
+            clear: both;
+        }
         li {
             &.grid-sizer,
             &.item {
                 width: 33.333%;
             }
             &.grid-item {
-				float: left;
-			}
+                float: left;
+            }
             &.item.w2x {
                 width: 66.66%;
             }
@@ -454,7 +453,7 @@ p {
                 overflow: hidden;
             }
             a {
-            	padding: 8px;
+                padding: 8px;
             }
             figcaption {
                 background: #fff;
@@ -471,10 +470,10 @@ p {
         }
     }
     .grid li.shown,
-	.no-js .grid li,
-	.no-cssanimations .grid li {
-		opacity: 1;
-	}
+    .no-js .grid li,
+    .no-cssanimations .grid li {
+        opacity: 1;
+    }
     .grid li a,
     .grid li img {
         outline: none;
@@ -608,79 +607,80 @@ p {
     overflow-y: scroll;
     display: none;
 }
+
 .hero-section {
-	width: 100%;
-	position: relative;
-	line-height: 0;
+    width: 100%;
+    position: relative;
+    line-height: 0;
 }
+
 .popup-block {
     width: 100%;
     border: $frame-border solid $frame-color;
     display: none;
-
-    .info, .info2 {
-    	width: 50%;
-    	position: absolute;
-    	line-height: 100%;
-    	top: 100px;
-    	left: 10%;
-    	z-index: 2;
-
-    	.caption {
-    		font-size: 32px;
-    		margin: 20px 0;
-    		line-height: $line-height-base;
-    	}
-    	.tag {
-    		color: $gray-light;
-    		margin-bottom: 10px;
-    		
-    		span {
-    			display: inline-block;
-    			border-right: 1px solid $gray-lighter;
-    			padding-right: 10px;
-    			margin-right: 10px;
-    			text-transform: uppercase;
-    			font-size: $font-size-medium;
-	    			&:last-child {
-	    			border-right: none;
-	    		}
-    		}
-    	}
-    	p {
-    		line-height: $line-height-large;
-    	}
+    .info,
+    .info2 {
+        width: 50%;
+        position: absolute;
+        line-height: 100%;
+        top: 100px;
+        left: 10%;
+        z-index: 2;
+        .caption {
+            font-size: 32px;
+            margin: 20px 0;
+            line-height: $line-height-base;
+        }
+        .tag {
+            color: $gray-light;
+            margin-bottom: 10px;
+            span {
+                display: inline-block;
+                border-right: 1px solid $gray-lighter;
+                padding-right: 10px;
+                margin-right: 10px;
+                text-transform: uppercase;
+                font-size: $font-size-medium;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+        p {
+            line-height: $line-height-large;
+        }
     }
     .info2 {
-    	top: 30px;
-    	left: inherit;
-    	right: 30px;
-    	background: $white;
-    	padding: 20px;
-    	.icon {
-    		font-size: 100px;
-    	}
+        top: 30px;
+        left: inherit;
+        right: 30px;
+        background: $white;
+        padding: 20px;
+        .icon {
+            font-size: 100px;
+        }
     }
     .feature {
-    	padding-top: 250px;
+        padding-top: 250px;
     }
     .mockup {
-    	&.col2 {
-    		width: 50%;
-    	}
-    	&.col3 {
-    		width: 33.33%;
-    	}
-    	&.col4 {
-    		width: 25%;
-    	}
+        &.col2 {
+            width: 50%;
+        }
+        &.col3 {
+            width: 33.33%;
+        }
+        &.col4 {
+            width: 25%;
+        }
     }
     .device {
-    	text-align: center;
-    	padding: 20px 0 80px 0;
-    	background: #ddd;
+        text-align: center;
+        padding: 20px 0 80px 0;
+        background: #ddd;
     }
 }
+
 .btn-close {
     $close-size: 50px;
     width: $close-size;
@@ -720,82 +720,88 @@ p {
         }
     }
 }
+
 .back {
-	text-align: center;
-	padding: 40px 0;
-	.btn-back {
-		line-height: 100%;
-		padding: 35px 20px 0 20px;
-		position: relative;
-		cursor: pointer;
-		img {
-			width: 100px;
-			display: block;
-		}
-		&:hover:after {
-			content:'go back';
-			position: absolute;
-			top: 50px;
-			left: 30px;
-			text-decoration: line-through;
-		}
-	}
-}
-.others {
-	position: relative;
-	display: inline-block;
-	line-height: 100%;
-	.btn-prev, .btn-next {
-		width: 50%;
-		float: left;
-		color: $white;
-		padding: 50px 40px;
-		font-size: $font-size-large;
-		cursor: pointer;
-		line-height: $line-height-base;
-		span {
-			display: block;
-			color: $gray-light;
-			font-size: $font-size-medium;
-			padding-bottom: 5px;
-		}
-	}
-	.btn-prev {
-		background: $gray-dark;
-		span:before {
-			content: '\65';
-			font-family: 'eizafont';
-			padding-right: 5px;
-		}
-	}
-	.btn-next {
-		background: $black;
-		text-align: right;
-		span:after {
-			content: '\72';
-			font-family: 'eizafont';
-			padding-left: 5px;
-		}
-	}
+    text-align: center;
+    padding: 40px 0;
+    .btn-back {
+        line-height: 100%;
+        padding: 35px 20px 0 20px;
+        position: relative;
+        cursor: pointer;
+        img {
+            width: 100px;
+            display: block;
+        }
+        &:hover:after {
+            content: 'go back';
+            position: absolute;
+            top: 50px;
+            left: 30px;
+            text-decoration: line-through;
+        }
+    }
 }
 
+.others {
+    position: relative;
+    display: inline-block;
+    line-height: 100%;
+    .btn-prev,
+    .btn-next {
+        width: 50%;
+        float: left;
+        color: $white;
+        padding: 50px 40px;
+        font-size: $font-size-large;
+        cursor: pointer;
+        line-height: $line-height-base;
+        span {
+            display: block;
+            color: $gray-light;
+            font-size: $font-size-medium;
+            padding-bottom: 5px;
+        }
+    }
+    .btn-prev {
+        background: $gray-dark;
+        span:before {
+            content: '\65';
+            font-family: 'eizafont';
+            padding-right: 5px;
+        }
+    }
+    .btn-next {
+        background: $black;
+        text-align: right;
+        span:after {
+            content: '\72';
+            font-family: 'eizafont';
+            padding-left: 5px;
+        }
+    }
+}
 
 @media screen and (max-width: $break-small) {
-	$frame-border:  20px;
-	.menu {
-		width: 100%;
-		height: 70px;
-		right: 0;
-		left: 0;
-		top: 0;
-		padding: 10px 40px;
-		position: absolute;
-	}
-	.logo {
-		max-width: 80px;
-	}
+    $frame-border: 20px;
+    h2,
+    .h2 {
+        font-size: $font-size-h2 / 1.2;
+    }
+    .menu {
+        width: 100%;
+        height: 70px;
+        right: 0;
+        left: 0;
+        top: 0;
+        padding: 10px 40px;
+        position: absolute;
+    }
+    .logo {
+        max-width: 80px;
+    }
     .nav {
-    	display: none;
+        display: none;
     }
     .content {
         height: auto !important;
@@ -804,75 +810,78 @@ p {
         border-right: $frame-border solid $frame-color;
     }
     .block {
-    	padding: 40px 30px;
+        padding: 40px 30px;
     }
     #about {
-    	border-top: $frame-border solid $frame-color;
+        border-top: $frame-border solid $frame-color;
     }
     #about .bg {
-    	opacity: 0.5;
-    	background-position: 75% top;
+        opacity: 0.5;
+        background-position: 70% top;
+        background-size: 450% auto;
     }
     .about-block .intro {
-    	width: 100%;
+        width: 100%;
     }
     .timeline li {
-    	margin-left: 0;
-
-    	span {
-    		position: relative;
-    		left: inherit;
-    		display: block;
-    		margin-bottom: 10px;
-    		color: $gray-light;
-    	}
+        margin-left: 0;
+        span {
+            position: relative;
+            left: inherit;
+            display: block;
+            margin-bottom: 10px;
+            color: $gray-light;
+        }
     }
     .works-block .grid li {
-    	&.item {
-	    	width: 100%;
-	    }
-	    &.grid-sizer {
-	    	width: 100%;
-	    }
+        &.item {
+            width: 100%;
+        }
+        &.grid-sizer {
+            width: 100%;
+        }
     }
     .skills-block .box {
-    	width: 100%;
-    	padding-right: 0;
-    	padding-bottom: 20px;
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
     }
     #contact {
-    	border-bottom: $frame-border solid $frame-color;
+        border-bottom: $frame-border solid $frame-color;
     }
     #contact .bg {
-    	opacity: 0.7;
-    	background-position: left center;
+        opacity: 0.7;
+        background-position: left bottom;
+        background-size: auto;
     }
     #{$unicorn-btn-namespace} {
-    	padding: 0px ($unicorn-btn-height * 0.75);
+        padding: 0px ($unicorn-btn-height * 0.75);
     }
     .popup-block {
-	    .info, .info2 {
-	    	width: 100%;
-	    	position: relative;
-	    	top: 0;
-	    	left: 0;
-	    	padding: 20px;
-	    }
-	    .info {
-	    	padding-top: 60px;
-	    }
-	    .feature {
-	    	padding-top: 0px;
-	    	padding-bottom: 20px;
-	    }
-	    .device {
-	    	padding-bottom: 40px;
-	    }
+        .info,
+        .info2 {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            padding: 20px;
+        }
+        .info {
+            padding-top: 60px;
+        }
+        .feature {
+            padding-top: 0px;
+            padding-bottom: 20px;
+        }
+        .device {
+            padding-bottom: 40px;
+        }
     }
     .others {
-    	.btn-prev, .btn-next {
-    		width: 100%;
-    		padding: 20px;
-    	}
+        .btn-prev,
+        .btn-next {
+            width: 100%;
+            padding: 20px;
+        }
     }
 }

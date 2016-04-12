@@ -64,7 +64,7 @@
 
 <body data-spy="scroll" data-target="#scrollspy" data-offset="0">
     <div class="wrap">
-    	<div class="loading"></div>
+        <div class="loading"></div>
         <div class="menu">
             <div class="logo">
                 <img src="assets/images/logo.png" alt="wanti lai">
@@ -453,12 +453,23 @@
     window.sr = ScrollReveal({
         duration: 1000,
         scale: 0.7,
-        easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)' //easeOutCubic
+        easing: 'cubic-bezier(0.55, 0.055, 0.675, 0.19)' //easeOutCubic
     });
     sr.reveal('.about-block');
     sr.reveal('.works-block');
     sr.reveal('.skills-block');
     sr.reveal('.contact-block');
+
+    //loading
+    paceOptions = {
+        elements: false,
+        restartOnPushState: false,
+        restartOnRequestAfter: false
+    }
+    Pace.on('done', function() {
+        $('.loading').fadeOut(1000);
+        Pace.stop();
+    });
     </script>
 </body>
 
