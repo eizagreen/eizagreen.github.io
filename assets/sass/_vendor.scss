@@ -782,6 +782,21 @@ p {
     }
 }
 
+@media screen and (max-width: $break-projector) {
+	$frame-border: 25px;
+	.about-block .intro {
+		width: 100%;
+	}
+	#about {
+		height: auto !important;
+	}
+	.works-block .grid li.grid-sizer, .works-block .grid li.item {
+		width: 50%;
+	}
+	.skills-block p {
+		font-size: 15px;
+	}
+}
 @media screen and (max-width: $break-small) {
     $frame-border: 20px;
     h2,
