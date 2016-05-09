@@ -782,6 +782,11 @@ p {
     }
 }
 
+@media screen and (max-height: 601px) {
+	#about {
+		height: auto !important;
+	}
+}
 @media screen and (max-width: $break-projector) {
 	$frame-border: 25px;
 	.about-block .intro {
