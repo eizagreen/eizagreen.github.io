@@ -440,6 +440,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/js\/libs\/bootstrap.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/libs\/bootstrap.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/libs\/min\/bootstrap.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/libs\/ie.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -479,17 +490,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/libs\/masonry.pkgd.js",
 		"outputAbbreviatedPath": "\/assets\/js\/libs\/min\/masonry.pkgd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/libs\/min\/masonry.pkgd.min-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/libs\/min\/masonry.pkgd.min-min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/libs\/min\/min\/masonry.pkgd.min-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
