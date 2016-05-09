@@ -1226,6 +1226,9 @@ p {
       font-family: 'eizafont';
       padding-left: 5px; }
 
+@media screen and (max-height: 601px) {
+  #about {
+    height: auto !important; } }
 @media screen and (max-width: 801px) {
   .about-block .intro {
     width: 100%; }
