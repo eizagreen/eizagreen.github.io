@@ -437,35 +437,47 @@
     <script src="assets/js/libs/scrollreveal.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-    var grid = document.querySelector('.grid');
-    var msnry;
+	    var grid = document.querySelector('.grid');
+	    var msnry;
 
-    imagesLoaded(grid, function() {
-        // init Isotope after all images have loaded
-        msnry = new Masonry(grid, {
-            itemSelector: '.item',
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        });
-    });
+	    imagesLoaded(grid, function() {
+	        // init Isotope after all images have loaded
+	        msnry = new Masonry(grid, {
+	            itemSelector: '.item',
+	            columnWidth: '.grid-sizer',
+	            percentPosition: true
+	        });
+	    });
 
-    //scrollreveal
-    window.sr = ScrollReveal({
-        duration: 1000,
-        scale: 0.7,
-        easing: 'cubic-bezier(0.55, 0.055, 0.675, 0.19)' //easeOutCubic
-    });
-    sr.reveal('.about-block');
-    sr.reveal('.works-block');
-    sr.reveal('.skills-block');
-    sr.reveal('.contact-block');
+	    //scrollreveal
+	    window.sr = ScrollReveal({
+	        duration: 1000,
+	        scale: 0.7,
+	        easing: 'cubic-bezier(0.55, 0.055, 0.675, 0.19)' //easeOutCubic
+	    });
+	    sr.reveal('.about-block');
+	    sr.reveal('.works-block');
+	    sr.reveal('.skills-block');
+	    sr.reveal('.contact-block');
 
-    //loading
-    Pace.on('done', function() {
-        $('.loading').fadeOut(1000);
-        Pace.stop();
-    });
-    </script>
+	    //loading
+	    Pace.on('done', function() {
+	        $('.loading').fadeOut(1000);
+	        Pace.stop();
+	    });
+	    </script>
+	    <script type="text/javascript">
+	    window._pt_lt = new Date().getTime();
+	    window._pt_sp_2 = [];
+	    _pt_sp_2.push('setAccount,4183951b');
+	    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	    (function() {
+	        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+	        atag.src = _protocol + 'cjs.ptengine.com/pta_en.js';
+	        var s = document.getElementsByTagName('script')[0];
+	        s.parentNode.insertBefore(atag, s);
+	    })();
+	</script>
 </body>
 
 </html>
