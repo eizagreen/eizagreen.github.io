@@ -10,16 +10,10 @@
                                \_/__/                              
 -->
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7  is-loading" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 is-loading" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9 is-loading" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="en">
-<!--<![endif]-->
-
 <head>
-    <meta charset="utf-8" />
-    <title>Wendy Lai | Portfolio</title>
+	<meta charset="UTF-8">
+	<title>Wanti Lai | Portfolio</title>
     <meta name="description" content="Let's work together! I am a web designer based in Taipei. I am a logical thinker, imaginative creator, effective communicator and always willing to try new things." />
     <meta name="author" content="wantilai" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -28,7 +22,7 @@
     <meta property="og:title" content="Wanti Lai | Portfolio" />
     <meta property="og:description" content="Let's work together! I am a web designer based in Taipei. I am a logical thinker, imaginative creator, effective communicator and always willing to try new things." />
     <meta property="og:image" content="http://eizagreen.github.io/assets/images/fb.jpg?v=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=1">
     <link rel="stylesheet" href="assets/css/main.css?v=1" />
     <script src="assets/js/libs/modernizr-2.6.2.min.js"></script>
@@ -36,46 +30,20 @@
     <script src="assets/js/libs/bootstrap.min.js"></script>
     <script src="assets/js/libs/pace.min.js"></script>
     <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-74684128-1', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <script>
-    // ga button detection
-    $(window).load(function() {
-        $('a').on('click', function() {
-            var meta = $(this).data('ga');
-            if (meta !== undefined) {
-                ga('send', 'click', meta);
-            }
+        Pace.on('done', function() {
+            $('.loading').fadeOut(1000);
+            Pace.stop();
         });
-    });
-
-    //loading
-    Pace.on('done', function() {
-        $('.loading').fadeOut(1000);
-        Pace.stop();
-    });
     </script>
-    <!--[if IE]>
-	   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 </head>
 
 <body data-spy="scroll" data-target="#scrollspy" data-offset="0">
     <div class="wrap">
         <div class="loading"></div>
+        <div class="frame">
+            <div class="top"></div><div class="right"></div><div class="bottom"></div><div class="left"></div>
+        </div>
+        <div id="activeitem" style="position: fixed;top: 20px; right: 50px;width: 300px;height: 40px;z-index: 20;font-size: 20px;color: #000;"></div>
         <div class="menu">
             <div class="logo">
                 <img src="assets/images/logo.png" alt="wanti lai">
@@ -100,15 +68,21 @@
                 <h1 class="title">about</h1>
                 <h2>賴宛蒂 Wendy Lai</h2>
                 <div class="nickname">//eizagreen</div>
-                <p class="intro">I am a web designer based in Taipei. I love to design clean and solve the problems. I am a logical thinker, imaginative creator, effective communicator and always willing to try new things. Because of past work experience, for the branding, SEO and marketing operations are also have full awareness. With a passion for creating delightful digital products, having the opportunity to do so is what keeps me motivated each and every day.</p>
+                <p class="intro">台中人，現居台北。<br>是一個UI/UX設計師。工作經歷大多負責品牌視覺主理，官網改版及提升網站體驗的優化是每日的工作日常，偶爾剷除臭蟲和打掃網站環境。在旅遊咖期間也負責網站App的規劃與設計。喜歡邏輯思考和貓。</p>
                 <div class="timeline">
                     <ul>
-                        <li class="first"><span>2003/9~2007/6</span>
-                            <p>graduate from </p><strong>Visual Communication Design of NTUA 台灣藝術大學 視覺傳達設計系</strong></li>
-                        <li class="second"><span>2011/6~2013/4</span>
-                            <p>MEGAIS digital technology CO., LTD 邁格數位有限公司</p><strong>Creative Designer 資深網頁設計師</strong></li>
-                        <li class="third"><span>2013/5~2015/5</span>
-                            <p>HEARST MAGAZINES TAIWAN 台灣赫斯特媒體股份有限公司</p><strong>New Media and Website, Head of Visual 新媒體暨網站視覺統籌</strong></li>
+                        <li><span>2016/5~2019/2</span>
+                            <p>Tripresso.com 玩咖旅行社有限公司(旅遊咖)</p><strong>Senior UI/UX Designer 資深UI/UX設計師</strong>
+                        </li>
+                        <li><span>2013/5~2015/5</span>
+                            <p>HEARST MAGAZINES TAIWAN 台灣赫斯特媒體股份有限公司</p><strong>New Media and Website, Head of Visual 新媒體暨網站視覺統籌</strong>
+                        </li>
+                        <li><span>2011/6~2013/4</span>
+                            <p>MEGAIS digital technology CO., LTD 邁格數位有限公司</p><strong>Creative Designer 資深網頁設計師</strong>
+                        </li>
+                        <li><span>2003/9~2007/6</span>
+                            <p>graduate from </p><strong>Visual Communication Design of NTUA 台灣藝術大學 視覺傳達設計系</strong>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -120,10 +94,50 @@
                 <ul class="grid">
                     <li class="grid-sizer"></li>
                     <li class="item">
+                        <a class="popup" href="#tripressoapp" data-ga="tripressoapp">
+                            <figure>
+                                <img src="assets/images/works/tripresso01.png" width="840" height="600" alt="">
+                                <figcaption>Tripresso旅遊咖 App<small>UI/UX design</small></figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="popup" href="#tripressotour" data-ga="tripressotour">
+                            <figure>
+                                <img src="assets/images/works/tripresso02.png" width="840" height="600" alt="">
+                                <figcaption>Tripresso旅遊咖 官網<small>UI/UX design</small></figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="popup" href="#tripressoflight" data-ga="tripressoflight">
+                            <figure>
+                                <img src="assets/images/works/tripresso03.png" width="840" height="600" alt="">
+                                <figcaption>Tripresso旅遊咖 機票<small>UI/UX design</small></figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- <li class="item">
+                        <a class="popup" href="#tripressocustom" data-ga="tripressocustom">
+                            <figure>
+                                <img src="assets/images/works/tripresso04.png" width="840" height="600" alt="">
+                                <figcaption>Tripresso旅遊咖 訂製旅遊<small>UI/UX design, html/css</small></figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="popup" href="#tripressohotel" data-ga="tripressohotel">
+                            <figure>
+                                <img src="assets/images/works/tripresso05.png" width="840" height="600" alt="">
+                                <figcaption>Tripresso旅遊咖 訂房<small>UI/UX design</small></figcaption>
+                            </figure>
+                        </a>
+                    </li> -->
+                    <li class="item">
                         <a class="popup" href="#ellehomepage" data-ga="ellehomepage">
                             <figure>
                                 <img src="assets/images/works/project01.png" width="840" height="600" alt="">
-                                <figcaption>ELLE Taiwan官網<small>UI/UX design, html/css</small></figcaption>
+                                <figcaption>ELLE Taiwan 官網<small>UI/UX design, html/css</small></figcaption>
                             </figure>
                         </a>
                     </li>
@@ -131,7 +145,7 @@
                         <a class="popup" href="#simplelife" data-ga="simplelife">
                             <figure>
                                 <img src="assets/images/works/project02.png" width="840" height="600" alt="">
-                                <figcaption>Simple Life簡單生活節<small>web design, interactive design</small></figcaption>
+                                <figcaption>2015 Simple Life簡單生活節<small>web design, interactive design</small></figcaption>
                             </figure>
                         </a>
                     </li>
@@ -168,14 +182,6 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a class="popup" href="#wis" data-ga="wis">
-                            <figure>
-                                <img src="assets/images/works/project07.png" width="840" height="600" alt="">
-                                <figcaption>Women in Society講座<small>web design, html/css</small></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="item">
                         <a class="popup" href="#nescafe" data-ga="nescafe">
                             <figure>
                                 <img src="assets/images/works/project08.png" width="840" height="600" alt="">
@@ -198,28 +204,27 @@
             <div class="block skills-block">
                 <h1 class="title">skills</h1>
                 <div class="box">
-                    <span class="icon-skill-web"></span>
-                    <h4>web design</h4>
-                    <p>熟悉網頁設計流程，對於如何操作responsive web design更是相當有心得，當然也會使用sass的寫法。偶爾會玩一下css animations。</p>
-                </div>
-                <div class="box">
                     <span class="icon-skill-ui"></span>
                     <h4>UI/UX design</h4>
                     <p>有能力執行從網頁架構端到完成品的整體視覺規劃，對於切版和與後端技術人員的溝通都有十足的信心，並且知道合理的技術支援範圍，創造出符合良好使用者體驗的互動介面。</p>
                 </div>
                 <div class="box">
+                    <span class="icon-skill-web"></span>
+                    <h4>web design</h4>
+                    <p>熟悉網頁設計流程，對於如何操作responsive web design更是相當有心得，當然也會使用sass的寫法。偶爾會玩一下css animations。</p>
+                </div>
+                <div class="box">
                     <span class="icon-skill-code"></span>
                     <h4>web development</h4>
-                    <p>不害怕找臭蟲，可以寫寫基礎的javascript及jquery，喜歡整理及使用乾淨的語法。樂於與團隊合作，希望能開始愛上(與大家一起)使用github的樂趣。</p>
+                    <p>不害怕找臭蟲，可以寫寫基礎的javascript及jquery，喜歡整理及使用乾淨的語法。樂於與團隊合作。</p>
                 </div>
             </div>
         </div>
         <div id="contact" class="content">
             <div class="block contact-block">
                 <h1 class="title">contact</h1>
-                <h5 class="theme">Let's work together!</h5>
-                <p>send me an email with some details about your project,
-                    <br/>or just to say hi :)</p>
+                <h5 class="theme">一起工作吧！</h5>
+                <p>與我聯繫</p>
                 <a href="mailto:wantilai@gmail.com" class="button button-circle button-flat btn-mailto" data-ga="mailto"><span class="icon-mail-close"></span></a>
                 <p class="email">wantilai@gmail.com</p>
                 <div class="findme">
@@ -234,10 +239,78 @@
     </div>
     <div id="dialog">
         <a class="btn-close" data-ga="close"></a>
+        <div class="popup-block" id="tripressoapp">
+            <div class="hero-section">
+                <div class="info">
+                    <div class="caption">Tripresso旅遊咖 App</div>
+                    <div class="tag"><span>UI/UX design</span></div>
+                    <p>一款專為團體旅遊設計的旅遊App。跟團時最怕走馬看花，有了旅遊咖旅遊小夥伴在手，行程內容不僅可以一手掌握，景點介紹隨點隨看，讓你玩的自由又有深度！行前更有當地氣溫、航班時間、匯率等貼心提醒。更可以將旅行途中的照片上傳，製作獨一無二專屬於你的旅遊足跡，留下最珍貴的旅遊回憶！</p>
+                    <p class="os-icon"><span><img src="assets/images/works/android.svg" alt="Android"></span><span><img src="assets/images/works/apple.svg" alt="iOS"></span></p>
+                </div>
+            </div>
+            <div class="feature hero-section app"><img src="assets/images/works/app01.jpg" alt=""></div>
+            <div class="mockup hero-section"><img src="assets/images/works/app02.jpg" alt=""></div>
+            <div class="device hero-section app">
+                <img src="assets/images/works/app03.jpg" alt="">
+                <a href="https://itunes.apple.com/tw/app/tripresso%E6%97%85%E9%81%8A%E5%92%96/id1439407387?mt=8" class="button button-border" target="_blank" data-ga="to-tripressoapp">Apple Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.tripresso.berry&hl=en_US" class="button button-border" target="_blank" data-ga="to-tripressoapp">Google Play</a>
+            </div>
+            <div class="back hero-section">
+                <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
+            </div>
+            <div class="others hero-section">
+                <a class="btn-prev popup" href="#fashionweek" data-ga=""><span>previous project</span>2015 AW Fashionweek看秀去</a>
+                <a class="btn-next popup" href="#tripressotour" data-ga=""><span>next project</span>Tripresso旅遊咖 官網</a>
+            </div>
+        </div>
+        <div class="popup-block" id="tripressotour">
+            <div class="hero-section">
+                <div class="info">
+                    <div class="caption">Tripresso旅遊咖 官網</div>
+                    <div class="tag"><span>UI/UX design</span></div>
+                    <p>旅遊咖官網從無到有的建置，這邊列舉一些主要的功能頁面與流程。</p>
+                </div>
+            </div>
+            <div class="feature hero-section tour"><img src="assets/images/works/tour01.jpg" alt=""></div>
+            <div class="mockup hero-section"><img src="assets/images/works/tour02.jpg" alt=""></div>
+            <div class="mockup hero-section"><img src="assets/images/works/tour03.jpg" alt=""></div>
+            <div class="device hero-section">
+                <img src="assets/images/works/tour04.jpg" alt="">
+                <a href="https://www.tripresso.com/" class="button button-border" target="_blank" data-ga="to-tripressoapp">Visit Website</a>
+            </div>
+            <div class="back hero-section">
+                <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
+            </div>
+            <div class="others hero-section">
+                <a class="btn-prev popup" href="#tripressoapp" data-ga=""><span>previous project</span>Tripresso旅遊咖 App</a>
+                <a class="btn-next popup" href="#trupressoflight" data-ga=""><span>next project</span>Tripresso旅遊咖 機票</a>
+            </div>
+        </div>
+        <div class="popup-block" id="tripressoflight">
+            <div class="hero-section">
+                <div class="info">
+                    <div class="caption">Tripresso旅遊咖 機票</div>
+                    <div class="tag"><span>UI/UX design</span></div>
+                    <p>旅遊咖機票訂購平台。</p>
+                </div>
+            </div>
+            <div class="feature hero-section flight"><img src="assets/images/works/flight01.jpg" alt=""></div>
+            <div class="device hero-section flight">
+                <img src="assets/images/works/flight02.jpg" alt="">
+                <a href="https://www.tripresso.com/flight" class="button button-border" target="_blank" data-ga="to-tripressoflight">Visit Website</a>
+            </div>
+            <div class="back hero-section">
+                <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
+            </div>
+            <div class="others hero-section">
+                <a class="btn-prev popup" href="#tripressotour" data-ga=""><span>previous project</span>Tripresso旅遊咖 官網</a>
+                <a class="btn-next popup" href="#ellehomepage" data-ga=""><span>next project</span>ELLE Taiwan 官網 </a>
+            </div>
+        </div>
         <div class="popup-block" id="ellehomepage">
             <div class="hero-section">
                 <div class="info">
-                    <div class="caption">ELLE Taiwan官網</div>
+                    <div class="caption">ELLE Taiwan 官網</div>
                     <div class="tag"><span>UI/UX design</span><span>html/css</span></div>
                     <p>2014-2015年的ELLE Taiwan官網改版設計。導入RWD概念，手機版可以跟網頁版同步呈現，減去之前因應不同載具需要上稿多次的困擾。多種文章版型如何在大小視窗之前取得良好平衡，是此次設計過程中遇到的最大難題。</p>
                 </div>
@@ -246,14 +319,14 @@
             <div class="mockup hero-section"><img src="assets/images/works/mockup01.jpg" alt=""></div>
             <div class="device hero-section">
                 <img src="assets/images/works/device01.jpg" alt="">
-                <a href="http://data.elle.com.tw/" class="button button-border" target="_blank" data-ga="to-ellehomepage">visit demo</a>
+                <!-- <a href="http://data.elle.com.tw/" class="button button-border" target="_blank" data-ga="to-ellehomepage">visit demo</a> -->
             </div>
             <div class="back hero-section">
                 <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
             </div>
             <div class="others hero-section">
-                <a class="btn-prev popup" href="#fashionweek" data-ga="prev-fashionweek"><span>previous project</span>2015 AW Fashionweek看秀去</a>
-                <a class="btn-next popup" href="#simplelife" data-ga="next-simplelife"><span>next project</span>2015簡單生活節之漫步市場</a>
+                <a class="btn-prev popup" href="#tripressoflight" data-ga=""><span>previous project</span>Tripresso旅遊咖 機票</a>
+                <a class="btn-next popup" href="#simplelife" data-ga=""><span>next project</span>2015簡單生活節之漫步市場</a>
             </div>
         </div>
         <div class="popup-block" id="simplelife">
@@ -268,7 +341,7 @@
             <div class="mockup hero-section"><img src="assets/images/works/mockup02.jpg" alt=""></div>
             <div class="device hero-section">
                 <img src="assets/images/works/device02.jpg" alt="">
-                <a href="http://simplelifetw.com/" class="button button-border" target="_blank" data-ga="to-simplelife">visit website</a>
+                <!-- <a href="http://simplelifetw.com/" class="button button-border" target="_blank" data-ga="to-simplelife">visit website</a> -->
             </div>
             <div class="hero-section">
                 <div class="info2">
@@ -322,7 +395,7 @@
             <div class="mockup hero-section"><img src="assets/images/works/mockup04.jpg" alt=""></div>
             <div class="device hero-section">
                 <img src="assets/images/works/device04.jpg" alt="">
-                <a href="http://event.elle.com.tw/event/2014/new_talent/" class="button button-border" target="_blank" data-ga="to-newtalent">visit website</a>
+                <!-- <a href="http://event.elle.com.tw/event/2014/new_talent/" class="button button-border" target="_blank" data-ga="to-newtalent">visit website</a> -->
             </div>
             <div class="back hero-section">
                 <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
@@ -344,7 +417,7 @@
             <div class="mockup hero-section"><img src="assets/images/works/mockup05.jpg" alt=""></div>
             <div class="device hero-section">
                 <img src="assets/images/works/device05.jpg" alt="">
-                <a href="http://event.elle.com.tw/event/2015/beauty_awards/" class="button button-border" target="_blank" data-ga="to-ba">visit website</a>
+                <!-- <a href="http://event.elle.com.tw/event/2015/beauty_awards/" class="button button-border" target="_blank" data-ga="to-ba">visit website</a> -->
             </div>
             <div class="back hero-section">
                 <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
@@ -366,36 +439,14 @@
             <div class="mockup hero-section"><img src="assets/images/works/mockup06.jpg" alt=""></div>
             <div class="device hero-secton">
                 <img src="assets/images/works/device06.jpg" alt="">
-                <a href="http://event.elle.com.tw/event/2014/pariswoman/" class="button button-border" target="_blank" data-ga="to-pariswoman">visit website</a>
+                <!-- <a href="http://event.elle.com.tw/event/2014/pariswoman/" class="button button-border" target="_blank" data-ga="to-pariswoman">visit website</a> -->
             </div>
             <div class="back hero-section">
                 <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
             </div>
             <div class="others hero-section">
-                <a class="btn-prev popup" href="#ba" data-ga="prev-ba"><span>previous project</span>2015 ELLE國際美妝大賞</a>
-                <a class="btn-next popup" href="#wis" data-ga="next-wis"><span>next project</span>Women in Society講座</a>
-            </div>
-        </div>
-        <div class="popup-block" id="wis">
-            <div class="hero-section">
-                <div class="info">
-                    <div class="caption">Women in Society講座</div>
-                    <div class="tag"><span>web design</span><span>html/css</span></div>
-                    <p>ELLE品牌精神的延伸活動，透過八位女性名人專家分享，協助女性在生活與工作中找到快樂的平衡。講座報名與活動通合作，網頁則是使用Bootstrap架構。</p>
-                </div>
-            </div>
-            <div class="feature hero-section"><img src="assets/images/works/feature07.jpg" alt=""></div>
-            <!-- <div class="mockup hero-section"><img src="assets/images/works/mockup07.jpg" alt=""></div> -->
-            <div class="device hero-secton">
-                <img src="assets/images/works/device07.jpg" alt="">
-                <a href="http://event.elle.com.tw/event/2014/WomeninSociety/" class="button button-border" target="_blank" data-ga="to-wis">visit website</a>
-            </div>
-            <div class="back hero-section">
-                <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
-            </div>
-            <div class="others hero-section">
-                <a class="btn-prev popup" href="#pariswoman" data-ga="prev-pariswoman"><span>previous project</span>妳是哪一種巴黎女人?</a>
-                <a class="btn-next popup" href="#nescafe" data-ga="next-nescafe"><span>next project</span>NESCAFÉ雀巢咖啡官網</a>
+                <a class="btn-prev popup" href="#ba" data-ga=""><span>previous project</span>2015 ELLE國際美妝大賞</a>
+                <a class="btn-next popup" href="#nescafe" data-ga=""><span>next project</span>NESCAFÉ雀巢咖啡官網</a>
             </div>
         </div>
         <div class="popup-block" id="nescafe">
@@ -410,14 +461,14 @@
             <!-- <div class="mockup hero-section"><img src="assets/images/works/mockup08.jpg" alt=""></div> -->
             <div class="device hero-secton">
                 <img src="assets/images/works/device08.jpg" alt="">
-                <a href="https://www.nescafe.com.tw/" class="button button-border" target="_blank" data-ga="to-nescafe">visit website</a>
+                <!-- <a href="https://www.nescafe.com.tw/" class="button button-border" target="_blank" data-ga="to-nescafe">visit website</a> -->
             </div>
             <div class="back hero-section">
                 <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
             </div>
             <div class="others hero-section">
-                <a class="btn-prev popup" href="#wis" data-ga="prev-wis"><span>previous project</span>Women in Society講座</a>
-                <a class="btn-next popup" href="#fashionweek" data-ga="next-fashionweek"><span>next project</span>2015 AW Fashionweek看秀去</a>
+                <a class="btn-prev popup" href="#pariswoman" data-ga=""><span>previous project</span>妳是哪一種巴黎女人?</a>
+                <a class="btn-next popup" href="#fashionweek" data-ga=""><span>next project</span>2015 AW Fashionweek看秀去</a>
             </div>
         </div>
         <div class="popup-block" id="fashionweek">
@@ -432,14 +483,14 @@
             <!-- <div class="mockup hero-section"><img src="assets/images/works/mockup09.jpg" alt=""></div> -->
             <div class="device hero-secton">
                 <img src="assets/images/works/device09.jpg" alt="">
-                <a href="http://event.elle.com.tw/event/2015/fashionweek_2015_aw/" class="button button-border" target="_blank" data-ga="to-fashionweek">visit website</a>
+                <!-- <a href="http://event.elle.com.tw/event/2015/fashionweek_2015_aw/" class="button button-border" target="_blank" data-ga="to-fashionweek">visit website</a> -->
             </div>
             <div class="back hero-section">
                 <a class="button button-circle button-flat btn-back" data-ga="go-back"><img src="assets/images/logo.png" alt="go back"></a>
             </div>
             <div class="others hero-section">
-                <a class="btn-prev popup" href="#nescafe" data-ga="prev-nescafe"><span>previous project</span>NESCAFÉ雀巢咖啡官網</a>
-                <a class="btn-next popup" href="#ellehomepage" data-ga="next-ellehomepage"><span>next project</span>ELLE Taiwan官網</a>
+                <a class="btn-prev popup" href="#nescafe" data-ga=""><span>previous project</span>NESCAFÉ雀巢咖啡官網</a>
+                <a class="btn-next popup" href="#tripressoapp" data-ga=""><span>next project</span>Tripresso旅遊咖 App</a>
             </div>
         </div>
     </div>
@@ -448,47 +499,29 @@
     <script src="assets/js/libs/scrollreveal.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-	    var grid = document.querySelector('.grid');
-	    var msnry;
+        var grid = document.querySelector('.grid');
+        var msnry;
 
-	    imagesLoaded(grid, function() {
-	        // init Isotope after all images have loaded
-	        msnry = new Masonry(grid, {
-	            itemSelector: '.item',
-	            columnWidth: '.grid-sizer',
-	            percentPosition: true
-	        });
-	    });
+        imagesLoaded(grid, function() {
+            // init Isotope after all images have loaded
+            msnry = new Masonry(grid, {
+                itemSelector: '.item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+        });
 
-	    //scrollreveal
-	    window.sr = ScrollReveal({
-	        duration: 1000,
-	        scale: 0.7,
-	        easing: 'cubic-bezier(0.55, 0.055, 0.675, 0.19)' //easeOutCubic
-	    });
-	    sr.reveal('.about-block');
-	    sr.reveal('.works-block');
-	    sr.reveal('.skills-block');
-	    sr.reveal('.contact-block');
-
-	    //loading
-	    Pace.on('done', function() {
-	        $('.loading').fadeOut(1000);
-	        Pace.stop();
-	    });
-	    </script>
-	    <script type="text/javascript">
-	    window._pt_lt = new Date().getTime();
-	    window._pt_sp_2 = [];
-	    _pt_sp_2.push('setAccount,4183951b');
-	    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-	    (function() {
-	        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
-	        atag.src = _protocol + 'cjs.ptengine.com/pta_en.js';
-	        var s = document.getElementsByTagName('script')[0];
-	        s.parentNode.insertBefore(atag, s);
-	    })();
-	</script>
+        //scrollreveal
+        window.sr = ScrollReveal({
+            duration: 1600,
+            scale: 0.8,
+            easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)' 
+        });
+        sr.reveal('.about-block');
+        sr.reveal('.works-block');
+        sr.reveal('.skills-block');
+        sr.reveal('.contact-block');
+    </script>
 </body>
 
 </html>

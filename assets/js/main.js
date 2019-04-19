@@ -1,8 +1,9 @@
+
 $(function() {
 
 
     // Add smooth scrolling to all links inside a navbar
-    $("#scrollspy a").on('click', function(event) {
+    $('#scrollspy a').on('click', function(event) {
 
         // Prevent default anchor click behavior
         event.preventDefault();
@@ -20,6 +21,17 @@ $(function() {
             window.location.hash = hash;
         });
     });
+
+    //偵測移動位置增加class
+   // $('#scrollspy').on('activate.bs.scrollspy', function () {
+   //      var currentItem = $(".nav li.active > a").text();
+   //      $("#activeitem").html("目前您正在查看 - " + currentItem);
+   //      if (currentItem == "skills") {
+   //          $('.nav').addClass('white');
+   //      }else {
+   //          $('.nav').removeClass('white');
+   //      }
+   //  })
 
     //dialog
     $('.popup').on('click', function() {
