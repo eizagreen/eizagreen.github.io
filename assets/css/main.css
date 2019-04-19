@@ -124,7 +124,7 @@ img { max-width: 100%; height: auto; }
 .title:after { content: ''; position: absolute; bottom: 0; left: -20px; background: #000; width: 20px; height: 1px; }
 
 #about { height: 100%; }
-#about .bg { background: url("../images/about/bg.jpg"); background-position: right center; background-attachment: fixed; background-repeat: no-repeat; }
+#about .bg { background: url("../images/about/eiza.jpg"); background-position: right center; background-attachment: fixed; background-repeat: no-repeat; }
 
 .about-block h2 { font-size: 18px; }
 .about-block .nickname { color: #bdbdbd; margin-bottom: 20px; padding: 10px 0; font-size: 18px; }
