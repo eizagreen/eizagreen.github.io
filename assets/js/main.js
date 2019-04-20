@@ -49,6 +49,11 @@ $(function() {
 
         //ga('send', 'pageview', { 'page': location.href });
     });
+    $( document ).on( 'keydown', function ( e ) {
+        if ( e.keyCode === 27 ) { // ESC
+            $('#dialog, .popup-block').hide();
+        }
+    });
 
 
 });
