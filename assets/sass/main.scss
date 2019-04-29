@@ -393,11 +393,11 @@ img {
     vertical-align: middle;
     text-align: center;
     .box {
-        width: 33.33%;
+        width: 30%;
         float: left;
-        padding-right: 30px;
+        margin-right: 5%;
         &:last-child {
-            padding-right: 0;
+            margin-right: 0;
         }
     }
     span {
@@ -412,7 +412,6 @@ img {
         margin-bottom: 20px;
     }
     p {
-        text-align: left;
         line-height: 24px;
         color: #333;
     }
@@ -531,6 +530,9 @@ img {
         p {
             line-height: 24px;
         }
+        .button-border {
+            margin: 10px 0;
+        }
     }
     .info2 {
         top: 30px;
@@ -548,7 +550,7 @@ img {
         	padding: 100px 0 40px 0;
         }
         &.tour {
-        	padding: 60px 0 0 0;
+        	padding: 80px 0 0 0;
         }
         &.flight {
         	padding: 150px 0 0 0;
@@ -573,9 +575,15 @@ img {
         	padding: 0 0 60px 0;
         	background: #121928;
         }
+        &.tour {
+            padding: 0;
+        }
         &.flight {
         	padding: 0 0 60px 0;
         	background: #333;
+        }
+        .button-border {
+            margin: 0 10px;
         }
     }
 }
@@ -709,7 +717,6 @@ img {
     color: #000;
     border: 1px solid #000;
     background: #fff;
-    margin: 0 10px;
     &:hover, &:focus {
     	background: #000;
     	color: #fff;
@@ -723,6 +730,14 @@ img {
     padding: 0px;
     border-width: 0px;
     font-size: 18px;
+}
+.button-stick {
+    position: absolute;
+    z-index: 20;
+}
+.prototype-td {
+    bottom: 7%;
+    right: 14%;
 }
 // tripresso
 // -------------------------

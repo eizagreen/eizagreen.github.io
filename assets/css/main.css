@@ -158,11 +158,11 @@ img { max-width: 100%; height: auto; }
 #skills { height: 100%; background: #fff; display: table; }
 
 .skills-block { display: table-cell; vertical-align: middle; text-align: center; }
-.skills-block .box { width: 33.33%; float: left; padding-right: 30px; }
-.skills-block .box:last-child { padding-right: 0; }
+.skills-block .box { width: 30%; float: left; margin-right: 5%; }
+.skills-block .box:last-child { margin-right: 0; }
 .skills-block span { display: block; font-size: 100px; }
 .skills-block h4 { text-transform: uppercase; letter-spacing: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px; }
-.skills-block p { text-align: left; line-height: 24px; color: #333; }
+.skills-block p { line-height: 24px; color: #333; }
 
 #contact { height: 100%; display: table; }
 #contact .bg { background-image: url("../images/contact/bg.jpg"); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; }
@@ -188,18 +188,21 @@ img { max-width: 100%; height: auto; }
 .popup-block .info .tag span, .popup-block .info2 .tag span { display: inline-block; border-right: 1px solid #cccccc; padding-right: 10px; margin-right: 10px; text-transform: uppercase; font-size: 14px; }
 .popup-block .info .tag span:last-child, .popup-block .info2 .tag span:last-child { border-right: none; }
 .popup-block .info p, .popup-block .info2 p { line-height: 24px; }
+.popup-block .info .button-border, .popup-block .info2 .button-border { margin: 10px 0; }
 .popup-block .info2 { top: 30px; left: inherit; right: 30px; background: white; padding: 20px; }
 .popup-block .info2 .icon { font-size: 100px; }
 .popup-block .feature { padding-top: 250px; }
 .popup-block .feature.app { padding: 100px 0 40px 0; }
-.popup-block .feature.tour { padding: 60px 0 0 0; }
+.popup-block .feature.tour { padding: 80px 0 0 0; }
 .popup-block .feature.flight { padding: 150px 0 0 0; }
 .popup-block .mockup.col2 { width: 50%; }
 .popup-block .mockup.col3 { width: 33.33%; }
 .popup-block .mockup.col4 { width: 25%; }
 .popup-block .device { text-align: center; padding: 20px 0 80px 0; background: #ddd; }
 .popup-block .device.app { padding: 0 0 60px 0; background: #121928; }
+.popup-block .device.tour { padding: 0; }
 .popup-block .device.flight { padding: 0 0 60px 0; background: #333; }
+.popup-block .device .button-border { margin: 0 10px; }
 
 .btn-close { width: 50px; height: 50px; background: white; line-height: 50px; border: 1px solid black; position: fixed; top: 50px; right: 50px; cursor: pointer; z-index: 20; }
 .btn-close:before, .btn-close:after { transform: rotate(-45deg); content: ''; position: absolute; top: 50%; left: 50%; margin-top: -1px; margin-left: -12.5px; display: block; height: 2px; width: 25px; background-color: black; transition: all 0.25s ease-out; }
@@ -224,10 +227,14 @@ img { max-width: 100%; height: auto; }
 .button-flat { -webkit-transition-duration: 0.3s; transition-duration: 0.3s; background: #fff; border: 1px solid #000; }
 .button-flat:hover, .button-flat:focus { background: #000; color: #fff; }
 
-.button-border { color: #000; border: 1px solid #000; background: #fff; margin: 0 10px; }
+.button-border { color: #000; border: 1px solid #000; background: #fff; }
 .button-border:hover, .button-border:focus { background: #000; color: #fff; }
 
 .button-circle { border-radius: 240px; width: 120px; line-height: 120px; height: 120px; padding: 0px; border-width: 0px; font-size: 18px; }
+
+.button-stick { position: absolute; z-index: 20; }
+
+.prototype-td { bottom: 7%; right: 14%; }
 
 .os-icon { padding-top: 40px; }
 .os-icon span { background: #fff; width: 60px; height: 60px; border-radius: 50%; display: inline-block; padding: 15px; margin-right: 10px; }

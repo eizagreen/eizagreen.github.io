@@ -464,11 +464,11 @@ img {
   vertical-align: middle;
   text-align: center; }
   .skills-block .box {
-    width: 33.33%;
+    width: 30%;
     float: left;
-    padding-right: 30px; }
+    margin-right: 5%; }
     .skills-block .box:last-child {
-      padding-right: 0; }
+      margin-right: 0; }
   .skills-block span {
     display: block;
     font-size: 100px; }
@@ -479,7 +479,6 @@ img {
     font-weight: bold;
     margin-bottom: 20px; }
   .skills-block p {
-    text-align: left;
     line-height: 24px;
     color: #333; }
 
@@ -578,6 +577,9 @@ img {
     .popup-block .info p,
     .popup-block .info2 p {
       line-height: 24px; }
+    .popup-block .info .button-border,
+    .popup-block .info2 .button-border {
+      margin: 10px 0; }
   .popup-block .info2 {
     top: 30px;
     left: inherit;
@@ -591,7 +593,7 @@ img {
     .popup-block .feature.app {
       padding: 100px 0 40px 0; }
     .popup-block .feature.tour {
-      padding: 60px 0 0 0; }
+      padding: 80px 0 0 0; }
     .popup-block .feature.flight {
       padding: 150px 0 0 0; }
   .popup-block .mockup.col2 {
@@ -607,9 +609,13 @@ img {
     .popup-block .device.app {
       padding: 0 0 60px 0;
       background: #121928; }
+    .popup-block .device.tour {
+      padding: 0; }
     .popup-block .device.flight {
       padding: 0 0 60px 0;
       background: #333; }
+    .popup-block .device .button-border {
+      margin: 0 10px; }
 
 .btn-close {
   width: 50px;
@@ -715,8 +721,7 @@ img {
 .button-border {
   color: #000;
   border: 1px solid #000;
-  background: #fff;
-  margin: 0 10px; }
+  background: #fff; }
   .button-border:hover, .button-border:focus {
     background: #000;
     color: #fff; }
@@ -729,6 +734,14 @@ img {
   padding: 0px;
   border-width: 0px;
   font-size: 18px; }
+
+.button-stick {
+  position: absolute;
+  z-index: 20; }
+
+.prototype-td {
+  bottom: 7%;
+  right: 14%; }
 
 .os-icon {
   padding-top: 40px; }
