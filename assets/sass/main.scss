@@ -500,8 +500,8 @@ img {
     display: none;
     position: relative;
     .info,
-    .info2 {
-        width: 44%;
+    .info2,
+    .info3 {
         position: absolute;
         line-height: 100%;
         top: 100px;
@@ -534,7 +534,11 @@ img {
             margin: 10px 0;
         }
     }
+    .info1 {
+        width: 44%;
+    }
     .info2 {
+        width: 44%;
         top: 30px;
         left: inherit;
         right: 30px;
@@ -544,16 +548,27 @@ img {
             font-size: 100px;
         }
     }
+    .info3 {
+        width: 80%;
+        position: absolute;
+        line-height: 100%;
+        top: 100px;
+        left: 10%;
+        z-index: 2;
+    }
     .feature {
         padding-top: 250px;
         &.app {
         	padding: 100px 0 40px 0;
         }
         &.tour {
-        	padding: 80px 0 0 0;
+        	padding: 100px 0 0 0;
         }
         &.flight {
         	padding: 150px 0 0 0;
+        }
+        &.split {
+            padding: 350px 0 0 0;
         }
     }
     .mockup {
@@ -565,6 +580,11 @@ img {
         }
         &.col4 {
             width: 25%;
+        }
+        &.tour {
+            padding-bottom: 40px;
+            background: #fff;
+            text-align: center;
         }
     }
     .device {
@@ -581,6 +601,9 @@ img {
         &.flight {
         	padding: 0 0 60px 0;
         	background: #333;
+        }
+        &.split {
+            padding: 0;
         }
         .button-border {
             margin: 0 10px;
@@ -731,14 +754,7 @@ img {
     border-width: 0px;
     font-size: 18px;
 }
-.button-stick {
-    position: absolute;
-    z-index: 20;
-}
-.prototype-td {
-    bottom: 7%;
-    right: 14%;
-}
+
 // tripresso
 // -------------------------
 .os-icon {
