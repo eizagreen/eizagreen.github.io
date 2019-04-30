@@ -547,24 +547,27 @@ img {
   display: none;
   position: relative; }
   .popup-block .info,
-  .popup-block .info2 {
-    width: 44%;
+  .popup-block .info2,
+  .popup-block .info3 {
     position: absolute;
     line-height: 100%;
     top: 100px;
     left: 10%;
     z-index: 2; }
     .popup-block .info .caption,
-    .popup-block .info2 .caption {
+    .popup-block .info2 .caption,
+    .popup-block .info3 .caption {
       font-size: 32px;
       margin: 20px 0;
       line-height: 1.25; }
     .popup-block .info .tag,
-    .popup-block .info2 .tag {
+    .popup-block .info2 .tag,
+    .popup-block .info3 .tag {
       color: #999999;
       margin-bottom: 10px; }
       .popup-block .info .tag span,
-      .popup-block .info2 .tag span {
+      .popup-block .info2 .tag span,
+      .popup-block .info3 .tag span {
         display: inline-block;
         border-right: 1px solid #cccccc;
         padding-right: 10px;
@@ -572,15 +575,21 @@ img {
         text-transform: uppercase;
         font-size: 14px; }
         .popup-block .info .tag span:last-child,
-        .popup-block .info2 .tag span:last-child {
+        .popup-block .info2 .tag span:last-child,
+        .popup-block .info3 .tag span:last-child {
           border-right: none; }
     .popup-block .info p,
-    .popup-block .info2 p {
+    .popup-block .info2 p,
+    .popup-block .info3 p {
       line-height: 24px; }
     .popup-block .info .button-border,
-    .popup-block .info2 .button-border {
+    .popup-block .info2 .button-border,
+    .popup-block .info3 .button-border {
       margin: 10px 0; }
+  .popup-block .info {
+    width: 44%; }
   .popup-block .info2 {
+    width: 44%;
     top: 30px;
     left: inherit;
     right: 30px;
@@ -588,14 +597,23 @@ img {
     padding: 20px; }
     .popup-block .info2 .icon {
       font-size: 100px; }
+  .popup-block .info3 {
+    width: 80%;
+    position: absolute;
+    line-height: 100%;
+    top: 100px;
+    left: 10%;
+    z-index: 2; }
   .popup-block .feature {
     padding-top: 250px; }
     .popup-block .feature.app {
       padding: 100px 0 40px 0; }
     .popup-block .feature.tour {
-      padding: 80px 0 0 0; }
+      padding: 120px 0 0 0; }
     .popup-block .feature.flight {
       padding: 150px 0 0 0; }
+    .popup-block .feature.split {
+      padding: 350px 0 0 0; }
   .popup-block .mockup.col2 {
     width: 50%; }
   .popup-block .mockup.col3 {
@@ -603,8 +621,9 @@ img {
   .popup-block .mockup.col4 {
     width: 25%; }
   .popup-block .mockup.tour {
-    padding-bottom: 100px;
-    background: #fff; }
+    padding-bottom: 40px;
+    background: #fff;
+    text-align: center; }
   .popup-block .device {
     text-align: center;
     padding: 20px 0 80px 0;
@@ -617,6 +636,8 @@ img {
     .popup-block .device.flight {
       padding: 0 0 60px 0;
       background: #333; }
+    .popup-block .device.split {
+      padding: 0; }
     .popup-block .device .button-border {
       margin: 0 10px; }
 
@@ -738,14 +759,6 @@ img {
   border-width: 0px;
   font-size: 18px; }
 
-.button-stick {
-  position: absolute;
-  z-index: 20; }
-
-.prototype-td {
-  bottom: 7%;
-  right: 14%; }
-
 .os-icon {
   padding-top: 40px; }
   .os-icon span {
@@ -835,7 +848,8 @@ img {
     background-size: auto; }
 
   .popup-block .info,
-  .popup-block .info2 {
+  .popup-block .info2,
+  .popup-block .info3 {
     width: 100%;
     position: relative;
     top: 0;
@@ -844,8 +858,7 @@ img {
   .popup-block .info {
     padding-top: 60px; }
   .popup-block .feature {
-    padding-top: 0px;
-    padding-bottom: 20px; }
+    padding: 0px !important; }
   .popup-block .device {
     padding-bottom: 40px; }
 

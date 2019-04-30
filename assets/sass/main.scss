@@ -534,7 +534,7 @@ img {
             margin: 10px 0;
         }
     }
-    .info1 {
+    .info {
         width: 44%;
     }
     .info2 {
@@ -562,7 +562,7 @@ img {
         	padding: 100px 0 40px 0;
         }
         &.tour {
-        	padding: 100px 0 0 0;
+        	padding: 120px 0 0 0;
         }
         &.flight {
         	padding: 150px 0 0 0;
@@ -866,7 +866,8 @@ img {
     }
     .popup-block {
         .info,
-        .info2 {
+        .info2,
+        .info3 {
             width: 100%;
             position: relative;
             top: 0;
@@ -877,8 +878,7 @@ img {
             padding-top: 60px;
         }
         .feature {
-            padding-top: 0px;
-            padding-bottom: 20px;
+            padding: 0px !important;
         }
         .device {
             padding-bottom: 40px;

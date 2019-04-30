@@ -189,13 +189,13 @@ img { max-width: 100%; height: auto; }
 .popup-block .info .tag span:last-child, .popup-block .info2 .tag span:last-child, .popup-block .info3 .tag span:last-child { border-right: none; }
 .popup-block .info p, .popup-block .info2 p, .popup-block .info3 p { line-height: 24px; }
 .popup-block .info .button-border, .popup-block .info2 .button-border, .popup-block .info3 .button-border { margin: 10px 0; }
-.popup-block .info1 { width: 44%; }
+.popup-block .info { width: 44%; }
 .popup-block .info2 { width: 44%; top: 30px; left: inherit; right: 30px; background: white; padding: 20px; }
 .popup-block .info2 .icon { font-size: 100px; }
 .popup-block .info3 { width: 80%; position: absolute; line-height: 100%; top: 100px; left: 10%; z-index: 2; }
 .popup-block .feature { padding-top: 250px; }
 .popup-block .feature.app { padding: 100px 0 40px 0; }
-.popup-block .feature.tour { padding: 100px 0 0 0; }
+.popup-block .feature.tour { padding: 120px 0 0 0; }
 .popup-block .feature.flight { padding: 150px 0 0 0; }
 .popup-block .feature.split { padding: 350px 0 0 0; }
 .popup-block .mockup.col2 { width: 50%; }
@@ -259,9 +259,9 @@ img { max-width: 100%; height: auto; }
   .works-block .grid li.grid-sizer { width: 100%; }
   .skills-block .box { width: 100%; padding-right: 0; padding-bottom: 20px; }
   #contact .bg { opacity: 0.7; background-position: left bottom; background-size: auto; }
-  .popup-block .info, .popup-block .info2 { width: 100%; position: relative; top: 0; left: 0; padding: 20px; }
+  .popup-block .info, .popup-block .info2, .popup-block .info3 { width: 100%; position: relative; top: 0; left: 0; padding: 20px; }
   .popup-block .info { padding-top: 60px; }
-  .popup-block .feature { padding-top: 0px; padding-bottom: 20px; }
+  .popup-block .feature { padding: 0px !important; }
   .popup-block .device { padding-bottom: 40px; }
   .others .btn-prev, .others .btn-next { width: 100%; padding: 20px; }
   .btn-close { top: 30px; right: 30px; } }
