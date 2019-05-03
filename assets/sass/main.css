@@ -614,6 +614,8 @@ img {
       padding: 150px 0 0 0; }
     .popup-block .feature.split {
       padding: 350px 0 0 0; }
+    .popup-block .feature.hotel {
+      padding: 100px 0 0 0; }
   .popup-block .mockup.col2 {
     width: 50%; }
   .popup-block .mockup.col3 {
@@ -637,6 +639,8 @@ img {
       padding: 0 0 60px 0;
       background: #333; }
     .popup-block .device.split {
+      padding: 0; }
+    .popup-block .device.hotel {
       padding: 0; }
     .popup-block .device .button-border {
       margin: 0 10px; }

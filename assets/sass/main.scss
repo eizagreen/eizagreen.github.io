@@ -570,6 +570,12 @@ img {
         &.split {
             padding: 350px 0 0 0;
         }
+        &.hotel {
+            padding: 100px 0 0 0;
+        }
+        &.colico {
+            padding: 100px 0 0 0;
+        }
     }
     .mockup {
         &.col2 {
@@ -603,6 +609,17 @@ img {
         	background: #333;
         }
         &.split {
+            padding: 0;
+        }
+        &.hotel {
+            padding: 0 0 60px 0;
+            background: #757575;
+        }
+        &.custom {
+            padding: 0 0 60px 0;
+            background: #616161;
+        }
+        &.colico {
             padding: 0;
         }
         .button-border {
