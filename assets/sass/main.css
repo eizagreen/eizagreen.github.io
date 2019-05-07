@@ -357,7 +357,7 @@ img {
     background-repeat: no-repeat; }
 
 .about-block h2 {
-  font-size: 18px; }
+  font-size: 24px; }
 .about-block .nickname {
   color: #bdbdbd;
   margin-bottom: 20px;
@@ -486,7 +486,7 @@ img {
   height: 100%;
   display: table; }
   #contact .bg {
-    background-image: url("../images/contact/bg.jpg");
+    background-image: url("../images/contact/desk.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat; }
@@ -495,35 +495,40 @@ img {
   display: table-cell;
   text-align: center;
   vertical-align: middle; }
-  .contact-block .theme {
-    font-size: 24px;
-    font-style: italic; }
-  .contact-block p {
-    font-size: 14px;
-    padding: 10px 0; }
-  .contact-block .btn-mailto {
-    font-size: 28px;
-    margin: 20px 0; }
-    .contact-block .btn-mailto:hover .icon-mail-close:before {
-      content: "\6f"; }
-  .contact-block .email {
-    font-weight: bold;
-    position: relative;
-    padding-bottom: 20px; }
-    .contact-block .email:after {
-      content: '';
-      width: 60px;
-      height: 1px;
-      background: black;
-      position: absolute;
-      left: 50%;
-      margin-left: -30px;
-      bottom: 0; }
-  .contact-block .findme {
-    margin: 20px 0;
-    font-size: 28px; }
-    .contact-block .findme a {
-      margin: 0 3px; }
+  .contact-block .card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px; }
+    .contact-block .card .theme {
+      font-size: 24px;
+      font-style: italic; }
+    .contact-block .card p {
+      font-size: 14px;
+      padding: 10px 0; }
+    .contact-block .card .btn-mailto {
+      font-size: 28px;
+      margin: 20px 0; }
+      .contact-block .card .btn-mailto:hover .icon-mail-close:before {
+        content: "\6f"; }
+    .contact-block .card .email {
+      font-weight: bold;
+      position: relative;
+      padding-bottom: 20px; }
+      .contact-block .card .email:after {
+        content: '';
+        width: 60px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        left: 50%;
+        margin-left: -30px;
+        bottom: 0; }
+    .contact-block .card .findme {
+      margin: 20px 0;
+      font-size: 28px; }
+      .contact-block .card .findme a {
+        margin: 0 3px; }
 
 #dialog {
   width: 100%;
@@ -616,6 +621,8 @@ img {
       padding: 350px 0 0 0; }
     .popup-block .feature.hotel {
       padding: 100px 0 0 0; }
+    .popup-block .feature.colico {
+      padding: 100px 0 0 0; }
   .popup-block .mockup.col2 {
     width: 50%; }
   .popup-block .mockup.col3 {
@@ -641,7 +648,16 @@ img {
     .popup-block .device.split {
       padding: 0; }
     .popup-block .device.hotel {
+      padding: 0 0 60px 0;
+      background: #757575; }
+    .popup-block .device.custom {
+      padding: 0 0 60px 0;
+      background: #616161; }
+    .popup-block .device.colico {
       padding: 0; }
+    .popup-block .device.ski {
+      padding: 0 0 60px 0;
+      background: #fff; }
     .popup-block .device .button-border {
       margin: 0 10px; }
 

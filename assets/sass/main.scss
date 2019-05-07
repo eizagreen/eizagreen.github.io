@@ -234,7 +234,7 @@ img {
 
 .about-block {
 	h2 {
-		font-size: 18px;
+		font-size: 24px;
 	}
     .nickname {
         color: #bdbdbd;
@@ -423,7 +423,7 @@ img {
     height: 100%;
     display: table;
     .bg {
-        background-image: url("../images/contact/bg.jpg");
+        background-image: url("../images/contact/desk.jpg");
         background-position: center center;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -434,41 +434,49 @@ img {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    .theme {
-        font-size: $font-size-large;
-        font-style: italic;
-    }
-    p {
-        font-size: 14px;
-        padding: 10px 0;
-    }
-    .btn-mailto {
-        font-size: $font-size-h2;
-        margin: 20px 0;
-        &:hover .icon-mail-close:before {
-            content: "\6f";
+    .card {
+        // display: table-cell;
+        // background: rgba(255,255,255,0.9);
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 40px;
+        .theme {
+            font-size: $font-size-large;
+            font-style: italic;
         }
-    }
-    .email {
-        font-weight: bold;
-        position: relative;
-        padding-bottom: 20px;
-        &:after {
-            content: '';
-            width: 60px;
-            height: 1px;
-            background: $black;
-            position: absolute;
-            left: 50%;
-            margin-left: -30px;
-            bottom: 0;
+        p {
+            font-size: 14px;
+            padding: 10px 0;
         }
-    }
-    .findme {
-        margin: 20px 0;
-        font-size: $font-size-h2;
-        a {
-            margin: 0 3px;
+        .btn-mailto {
+            font-size: $font-size-h2;
+            margin: 20px 0;
+            &:hover .icon-mail-close:before {
+                content: "\6f";
+            }
+        }
+        .email {
+            font-weight: bold;
+            position: relative;
+            padding-bottom: 20px;
+            &:after {
+                content: '';
+                width: 60px;
+                height: 1px;
+                background: $black;
+                position: absolute;
+                left: 50%;
+                margin-left: -30px;
+                bottom: 0;
+            }
+        }
+        .findme {
+            margin: 20px 0;
+            font-size: $font-size-h2;
+            a {
+                margin: 0 3px;
+            }
         }
     }
 }
@@ -621,6 +629,10 @@ img {
         }
         &.colico {
             padding: 0;
+        }
+        &.ski {
+            padding: 0 0 60px 0;
+            background: #fff;
         }
         .button-border {
             margin: 0 10px;
@@ -880,6 +892,9 @@ img {
         opacity: 0.7;
         background-position: left bottom;
         background-size: auto;
+    }
+    .contact-block .card {
+        padding: 120px 0;
     }
     .popup-block {
         .info,

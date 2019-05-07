@@ -126,7 +126,7 @@ img { max-width: 100%; height: auto; }
 #about { height: 100%; }
 #about .bg { background: url("../images/about/eiza.jpg"); background-position: right center; background-attachment: fixed; background-repeat: no-repeat; }
 
-.about-block h2 { font-size: 18px; }
+.about-block h2 { font-size: 24px; }
 .about-block .nickname { color: #bdbdbd; margin-bottom: 20px; padding: 10px 0; font-size: 18px; }
 .about-block .intro { line-height: 24px; width: 60%; }
 
@@ -165,17 +165,18 @@ img { max-width: 100%; height: auto; }
 .skills-block p { line-height: 24px; color: #333; }
 
 #contact { height: 100%; display: table; }
-#contact .bg { background-image: url("../images/contact/bg.jpg"); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; }
+#contact .bg { background-image: url("../images/contact/desk.jpg"); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; }
 
 .contact-block { display: table-cell; text-align: center; vertical-align: middle; }
-.contact-block .theme { font-size: 24px; font-style: italic; }
-.contact-block p { font-size: 14px; padding: 10px 0; }
-.contact-block .btn-mailto { font-size: 28px; margin: 20px 0; }
-.contact-block .btn-mailto:hover .icon-mail-close:before { content: "\6f"; }
-.contact-block .email { font-weight: bold; position: relative; padding-bottom: 20px; }
-.contact-block .email:after { content: ''; width: 60px; height: 1px; background: black; position: absolute; left: 50%; margin-left: -30px; bottom: 0; }
-.contact-block .findme { margin: 20px 0; font-size: 28px; }
-.contact-block .findme a { margin: 0 3px; }
+.contact-block .card { width: 100%; max-width: 500px; margin: 0 auto; padding: 40px; }
+.contact-block .card .theme { font-size: 24px; font-style: italic; }
+.contact-block .card p { font-size: 14px; padding: 10px 0; }
+.contact-block .card .btn-mailto { font-size: 28px; margin: 20px 0; }
+.contact-block .card .btn-mailto:hover .icon-mail-close:before { content: "\6f"; }
+.contact-block .card .email { font-weight: bold; position: relative; padding-bottom: 20px; }
+.contact-block .card .email:after { content: ''; width: 60px; height: 1px; background: black; position: absolute; left: 50%; margin-left: -30px; bottom: 0; }
+.contact-block .card .findme { margin: 20px 0; font-size: 28px; }
+.contact-block .card .findme a { margin: 0 3px; }
 
 #dialog { width: 100%; height: 100%; background: #eeeeee; position: fixed; top: 0; left: 0; z-index: 20; overflow-y: scroll; display: none; }
 
@@ -212,6 +213,7 @@ img { max-width: 100%; height: auto; }
 .popup-block .device.hotel { padding: 0 0 60px 0; background: #757575; }
 .popup-block .device.custom { padding: 0 0 60px 0; background: #616161; }
 .popup-block .device.colico { padding: 0; }
+.popup-block .device.ski { padding: 0 0 60px 0; background: #fff; }
 .popup-block .device .button-border { margin: 0 10px; }
 
 .btn-close { width: 50px; height: 50px; background: white; line-height: 50px; border: 1px solid black; position: fixed; top: 50px; right: 50px; cursor: pointer; z-index: 20; }
@@ -264,6 +266,7 @@ img { max-width: 100%; height: auto; }
   .works-block .grid li.grid-sizer { width: 100%; }
   .skills-block .box { width: 100%; padding-right: 0; padding-bottom: 20px; }
   #contact .bg { opacity: 0.7; background-position: left bottom; background-size: auto; }
+  .contact-block .card { padding: 120px 0; }
   .popup-block .info, .popup-block .info2, .popup-block .info3 { width: 100%; position: relative; top: 0; left: 0; padding: 20px; }
   .popup-block .info { padding-top: 60px; }
   .popup-block .feature { padding: 0px !important; }
