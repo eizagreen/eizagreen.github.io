@@ -614,7 +614,7 @@ img {
     .popup-block .feature.app {
       padding: 100px 0 40px 0; }
     .popup-block .feature.tour {
-      padding: 120px 0 0 0; }
+      padding: 220px 0 0 0; }
     .popup-block .feature.flight {
       padding: 150px 0 0 0; }
     .popup-block .feature.split {
@@ -866,6 +866,9 @@ img {
     opacity: 0.7;
     background-position: left bottom;
     background-size: auto; }
+
+  .contact-block .card {
+    padding: 120px 0; }
 
   .popup-block .info,
   .popup-block .info2,
