@@ -195,7 +195,7 @@ img { max-width: 100%; height: auto; }
 .popup-block .info2 .icon { font-size: 100px; }
 .popup-block .info3 { width: 80%; position: absolute; line-height: 100%; top: 100px; left: 10%; z-index: 2; }
 .popup-block .feature { padding-top: 250px; }
-.popup-block .feature.app { padding: 100px 0 40px 0; }
+.popup-block .feature.app { padding: 120px 0 40px 0; }
 .popup-block .feature.tour { padding: 220px 0 0 0; }
 .popup-block .feature.flight { padding: 150px 0 0 0; }
 .popup-block .feature.split { padding: 350px 0 0 0; }
