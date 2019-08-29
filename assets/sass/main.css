@@ -365,7 +365,12 @@ img {
   font-size: 18px; }
 .about-block .intro {
   line-height: 24px;
-  width: 60%; }
+  width: 60%;
+  font-size: 15px; }
+  .about-block .intro.en {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px; }
 
 .timeline {
   margin: 20px 0;
@@ -612,7 +617,7 @@ img {
   .popup-block .feature {
     padding-top: 250px; }
     .popup-block .feature.app {
-      padding: 100px 0 40px 0; }
+      padding: 120px 0 40px 0; }
     .popup-block .feature.tour {
       padding: 220px 0 0 0; }
     .popup-block .feature.flight {

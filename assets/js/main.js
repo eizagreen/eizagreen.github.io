@@ -33,6 +33,12 @@ $(function() {
    //      }
    //  })
 
+
+    // $("a[href^=#]").on("click", function(e) {
+    //     e.preventDefault();
+    //     history.pushState({}, "", this.href);
+    // });
+
     //dialog
     $('.popup').on('click', function() {
         event.preventDefault();
@@ -43,17 +49,19 @@ $(function() {
         var project = $(this).attr("href");
         $(project).fadeIn(500);
         $(".popup-block:visible").not(project).hide();
+        // window.location = "?project=" + project;
+        
     });
     $('.btn-close, .btn-back').on('click', function() {
         $('#dialog, .popup-block').hide();
-
-        //ga('send', 'pageview', { 'page': location.href });
     });
     $( document ).on( 'keydown', function ( e ) {
         if ( e.keyCode === 27 ) { // ESC
             $('#dialog, .popup-block').hide();
         }
     });
+
+
 
 
 });

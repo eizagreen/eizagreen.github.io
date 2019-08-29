@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Judson:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Judson:300,400,400italic);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -126,16 +126,18 @@ img { max-width: 100%; height: auto; }
 #about { height: 100%; }
 #about .bg { background: url("../images/about/eiza.jpg"); background-position: right center; background-attachment: fixed; background-repeat: no-repeat; }
 
-.about-block h2 { font-size: 24px; }
+.about-block .name { font-size: 24px; margin-bottom: 16px; }
+.about-block .name small { font-size: 18px; }
 .about-block .nickname { color: #bdbdbd; margin-bottom: 20px; padding: 10px 0; font-size: 18px; }
-.about-block .intro { line-height: 24px; width: 60%; }
+.about-block .intro { line-height: 24px; width: 60%; font-size: 15px; }
+.about-block .intro.en { font-size: 14px; line-height: 20px; margin-bottom: 10px; }
 
 .timeline { margin: 20px 0; font-size: 14px; }
 .timeline li { padding: 10px 15px; margin-left: 120px; position: relative; }
-.timeline li:nth-child(1) { border-left: 4px solid #333; }
-.timeline li:nth-child(2) { border-left: 4px solid #777; }
-.timeline li:nth-child(3) { border-left: 4px solid #aaa; }
-.timeline li:nth-child(4) { border-left: 4px solid #ccc; }
+.timeline li:nth-child(1) { border-left: 2px solid #333; }
+.timeline li:nth-child(2) { border-left: 2px solid #777; }
+.timeline li:nth-child(3) { border-left: 2px solid #aaa; }
+.timeline li:nth-child(4) { border-left: 2px solid #ccc; }
 .timeline li span { position: absolute; left: -125px; font-size: 12px; letter-spacing: 2px; }
 .timeline li strong { font-weight: bold; padding-top: 5px; display: block; }
 
@@ -157,26 +159,24 @@ img { max-width: 100%; height: auto; }
 
 #skills { height: 100%; background: #fff; display: table; }
 
-.skills-block { display: table-cell; vertical-align: middle; text-align: center; }
-.skills-block .box { width: 30%; float: left; margin-right: 5%; }
+.skills-block { display: table-cell; vertical-align: middle; }
+.skills-block .box { width: 30%; float: left; margin-right: 5%; border: 1px solid #333; }
 .skills-block .box:last-child { margin-right: 0; }
-.skills-block span { display: block; font-size: 100px; }
-.skills-block h4 { text-transform: uppercase; letter-spacing: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px; }
-.skills-block p { line-height: 24px; color: #333; }
+.skills-block span { display: block; font-size: 100px; text-align: center; }
+.skills-block h4 { text-transform: uppercase; letter-spacing: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px; background: #000; color: #fff; text-align: center; }
+.skills-block p { line-height: 24px; color: #333; padding: 0 15px 30px 15px; }
 
 #contact { height: 100%; display: table; }
 #contact .bg { background-image: url("../images/contact/desk.jpg"); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; }
 
-.contact-block { display: table-cell; text-align: center; vertical-align: middle; }
-.contact-block .card { width: 100%; max-width: 500px; margin: 0 auto; padding: 40px; }
-.contact-block .card .theme { font-size: 24px; font-style: italic; }
+.contact-block { display: table-cell; vertical-align: middle; }
+.contact-block .card .theme { font-size: 32px; font-weight: 300; padding-top: 10px; }
 .contact-block .card p { font-size: 14px; padding: 10px 0; }
 .contact-block .card .btn-mailto { font-size: 28px; margin: 20px 0; }
 .contact-block .card .btn-mailto:hover .icon-mail-close:before { content: "\6f"; }
-.contact-block .card .email { font-weight: bold; position: relative; padding-bottom: 20px; }
-.contact-block .card .email:after { content: ''; width: 60px; height: 1px; background: black; position: absolute; left: 50%; margin-left: -30px; bottom: 0; }
-.contact-block .card .findme { margin: 20px 0; font-size: 28px; }
-.contact-block .card .findme a { margin: 0 3px; }
+.contact-block .card .email { font-weight: bold; position: relative; }
+.contact-block .card .findme { margin: 10px 0 20px 0; font-size: 0; }
+.contact-block .card .findme a { display: inline-block; margin: 0 4px; font-size: 32px; }
 
 #dialog { width: 100%; height: 100%; background: #eeeeee; position: fixed; top: 0; left: 0; z-index: 20; overflow-y: scroll; display: none; }
 

@@ -2,7 +2,7 @@
 @import "icons";
 @import "var";
 @import "pace";
-@import url(https://fonts.googleapis.com/css?family=Judson:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Judson:300,400,400italic);
 
 
 
@@ -233,8 +233,12 @@ img {
 }
 
 .about-block {
-	h2 {
+	.name {
 		font-size: 24px;
+        margin-bottom: 16px;
+        small {
+            font-size: 18px;
+        }
 	}
     .nickname {
         color: #bdbdbd;
@@ -245,6 +249,12 @@ img {
     .intro {
         line-height: 24px;
         width: 60%;
+        font-size: 15px;
+        &.en {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -256,16 +266,16 @@ img {
         margin-left: 120px;
         position: relative;
         &:nth-child(1) {
-            border-left: 4px solid #333;
+            border-left: 2px solid #333;
         }
         &:nth-child(2) {
-            border-left: 4px solid #777;
+            border-left: 2px solid #777;
         }
         &:nth-child(3) {
-            border-left: 4px solid #aaa;
+            border-left: 2px solid #aaa;
         }
         &:nth-child(4) {
-            border-left: 4px solid #ccc;
+            border-left: 2px solid #ccc;
             // &:after {
             //     width: 0;
             //     height: 0;
@@ -391,11 +401,12 @@ img {
 .skills-block {
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
+    // text-align: center;
     .box {
         width: 30%;
         float: left;
         margin-right: 5%;
+        border: 1px solid #333;
         &:last-child {
             margin-right: 0;
         }
@@ -403,6 +414,7 @@ img {
     span {
         display: block;
         font-size: 100px;
+        text-align: center;
     }
     h4 {
         text-transform: uppercase;
@@ -410,10 +422,14 @@ img {
         font-size: 14px;
         font-weight: bold;
         margin-bottom: 20px;
+        background: #000;
+        color: #fff;
+        text-align: center;
     }
     p {
         line-height: 24px;
         color: #333;
+        padding: 0 15px 30px 15px;
     }
 }
 
@@ -432,18 +448,19 @@ img {
 
 .contact-block {
     display: table-cell;
-    text-align: center;
+    // text-align: center;
     vertical-align: middle;
     .card {
         // display: table-cell;
         // background: rgba(255,255,255,0.9);
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 40px;
+        // width: 100%;
+        // max-width: 500px;
+        // margin: 0 auto;
+        // padding: 40px;
         .theme {
-            font-size: $font-size-large;
-            font-style: italic;
+            font-size: 32px;
+            font-weight: 300;
+            padding-top: 10px;
         }
         p {
             font-size: 14px;
@@ -459,23 +476,23 @@ img {
         .email {
             font-weight: bold;
             position: relative;
-            padding-bottom: 20px;
-            &:after {
-                content: '';
-                width: 60px;
-                height: 1px;
-                background: $black;
-                position: absolute;
-                left: 50%;
-                margin-left: -30px;
-                bottom: 0;
-            }
+            // &:after {
+            //     content: '';
+            //     width: 60px;
+            //     height: 1px;
+            //     background: #000;
+            //     position: absolute;
+            //     left: 0;
+            //     bottom: 0;
+            // }
         }
         .findme {
-            margin: 20px 0;
-            font-size: $font-size-h2;
+            margin: 10px 0 20px 0;
+            font-size: 0;
             a {
-                margin: 0 3px;
+                display: inline-block;
+                margin: 0 4px;
+                font-size: 32px;
             }
         }
     }
