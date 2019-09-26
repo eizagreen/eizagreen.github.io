@@ -22,22 +22,6 @@ $(function() {
         });
     });
 
-    //偵測移動位置增加class
-   // $('#scrollspy').on('activate.bs.scrollspy', function () {
-   //      var currentItem = $(".nav li.active > a").text();
-   //      $("#activeitem").html("目前您正在查看 - " + currentItem);
-   //      if (currentItem == "skills") {
-   //          $('.nav').addClass('white');
-   //      }else {
-   //          $('.nav').removeClass('white');
-   //      }
-   //  })
-
-
-    // $("a[href^=#]").on("click", function(e) {
-    //     e.preventDefault();
-    //     history.pushState({}, "", this.href);
-    // });
 
     //dialog
     $('.popup').on('click', function() {
