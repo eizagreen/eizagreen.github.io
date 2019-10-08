@@ -167,7 +167,7 @@ img { max-width: 100%; height: auto; }
 .skills-block p { line-height: 24px; color: #333; padding: 0 15px 30px 15px; }
 
 #contact { height: 100%; display: table; }
-#contact .bg { background-image: url("../images/contact/desk.jpg"); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; }
+#contact .bg { background-image: url("../images/contact/desktop.jpg"); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; }
 
 .contact-block { display: table-cell; vertical-align: middle; }
 .contact-block .card .theme { font-size: 32px; font-weight: 300; padding-top: 10px; }

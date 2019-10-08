@@ -499,7 +499,7 @@ img {
   height: 100%;
   display: table; }
   #contact .bg {
-    background-image: url("../images/contact/desk.jpg");
+    background-image: url("../images/contact/desktop.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat; }
